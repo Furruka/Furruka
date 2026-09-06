@@ -1,8 +1,8 @@
 <svg
 xmlns="http://www.w3.org/2000/svg"
 width="100%"
-height="720"
-viewBox="0 0 760 720"
+height="977"
+viewBox="0 0 760 977"
 preserveAspectRatio="xMidYMid meet">
 
 <rect
@@ -43,7 +43,7 @@ stroke="#30363d"/>
 x="28"
 y="106"
 width="704"
-height="555"
+height="816"
 rx="10"
 fill="#161b22"
 stroke="#30363d"/>
@@ -111,13 +111,13 @@ stroke="#30363d"/>
 
 <circle
 cx="55"
-cy="226"
+cy="236"
 r="4"
 fill="#3fb950"/>
 
 <text
 x="70"
-y="230"
+y="240"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
@@ -126,7 +126,7 @@ fill="#8b949e">
 
 <text
 x="162"
-y="230"
+y="240"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
@@ -136,7 +136,7 @@ iPhoneMirror
 
 <text
 x="70"
-y="252"
+y="262"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
@@ -146,29 +146,38 @@ fill="#8b949e">
 
 <text
 x="162"
-y="252"
+y="262"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
-Turn reverse control off by default while its freeze is unresolved
+Turn reverse control off by default while its freeze is
+</text>
+
+<text
+x="162"
+y="280"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#f0f6fc">
+unresolved
 </text>
 
 <line
 x1="50"
-y1="270"
+y1="298"
 x2="710"
-y2="270"
+y2="298"
 stroke="#30363d"/>
 
 <circle
 cx="55"
-cy="278"
+cy="316"
 r="4"
 fill="#3fb950"/>
 
 <text
 x="70"
-y="282"
+y="320"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
@@ -177,7 +186,7 @@ fill="#8b949e">
 
 <text
 x="162"
-y="282"
+y="320"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
@@ -187,7 +196,7 @@ iPhoneMirror
 
 <text
 x="70"
-y="304"
+y="342"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
@@ -197,29 +206,38 @@ fill="#8b949e">
 
 <text
 x="162"
-y="304"
+y="342"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
-Keep D-Bus off the UI thread so the picture does not freeze
+Keep D-Bus off the UI thread so the picture does not
+</text>
+
+<text
+x="162"
+y="360"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#f0f6fc">
+freeze
 </text>
 
 <line
 x1="50"
-y1="322"
+y1="378"
 x2="710"
-y2="322"
+y2="378"
 stroke="#30363d"/>
 
 <circle
 cx="55"
-cy="330"
+cy="396"
 r="4"
 fill="#3fb950"/>
 
 <text
 x="70"
-y="334"
+y="400"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
@@ -228,7 +246,7 @@ fill="#8b949e">
 
 <text
 x="162"
-y="334"
+y="400"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
@@ -238,7 +256,7 @@ iPhoneMirror
 
 <text
 x="70"
-y="356"
+y="422"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
@@ -248,29 +266,38 @@ fill="#8b949e">
 
 <text
 x="162"
-y="356"
+y="422"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
-Drive the iPad from the preview window&apos;s mouse and keyboard
+Drive the iPad from the preview window&apos;s mouse and
+</text>
+
+<text
+x="162"
+y="440"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#f0f6fc">
+keyboard
 </text>
 
 <line
 x1="50"
-y1="374"
+y1="458"
 x2="710"
-y2="374"
+y2="458"
 stroke="#30363d"/>
 
 <circle
 cx="55"
-cy="382"
+cy="476"
 r="4"
 fill="#3fb950"/>
 
 <text
 x="70"
-y="386"
+y="480"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
@@ -279,7 +306,7 @@ fill="#8b949e">
 
 <text
 x="162"
-y="386"
+y="480"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
@@ -289,7 +316,7 @@ iPhoneMirror
 
 <text
 x="70"
-y="408"
+y="502"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
@@ -299,7 +326,7 @@ fill="#8b949e">
 
 <text
 x="162"
-y="408"
+y="502"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
@@ -308,111 +335,9 @@ Move the pointer on the iPad
 
 <line
 x1="50"
-y1="426"
+y1="520"
 x2="710"
-y2="426"
-stroke="#30363d"/>
-
-<circle
-cx="55"
-cy="434"
-r="4"
-fill="#3fb950"/>
-
-<text
-x="70"
-y="438"
-font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
-font-size="10"
-fill="#8b949e">
-2026-09-05
-</text>
-
-<text
-x="162"
-y="438"
-font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
-font-size="10"
-font-weight="700"
-fill="#58a6ff">
-iPhoneMirror
-</text>
-
-<text
-x="70"
-y="460"
-font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
-font-size="10"
-font-weight="700"
-fill="#8b949e">
-[GENERAL]
-</text>
-
-<text
-x="162"
-y="460"
-font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
-font-size="11"
-fill="#f0f6fc">
-Send HID reports to the paired iPad
-</text>
-
-<line
-x1="50"
-y1="478"
-x2="710"
-y2="478"
-stroke="#30363d"/>
-
-<circle
-cx="55"
-cy="486"
-r="4"
-fill="#3fb950"/>
-
-<text
-x="70"
-y="490"
-font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
-font-size="10"
-fill="#8b949e">
-2026-09-05
-</text>
-
-<text
-x="162"
-y="490"
-font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
-font-size="10"
-font-weight="700"
-fill="#58a6ff">
-iPhoneMirror
-</text>
-
-<text
-x="70"
-y="512"
-font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
-font-size="10"
-font-weight="700"
-fill="#8b949e">
-[DESKTOP]
-</text>
-
-<text
-x="162"
-y="512"
-font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
-font-size="11"
-fill="#f0f6fc">
-Publish the desktop as a BLE HID peripheral through BlueZ
-</text>
-
-<line
-x1="50"
-y1="530"
-x2="710"
-y2="530"
+y2="520"
 stroke="#30363d"/>
 
 <circle
@@ -456,7 +381,7 @@ y="564"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
-Prove reverse control is feasible through BlueZ HOGP
+Send HID reports to the paired iPad
 </text>
 
 <line
@@ -468,13 +393,13 @@ stroke="#30363d"/>
 
 <circle
 cx="55"
-cy="590"
+cy="600"
 r="4"
 fill="#3fb950"/>
 
 <text
 x="70"
-y="594"
+y="604"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
@@ -483,7 +408,7 @@ fill="#8b949e">
 
 <text
 x="162"
-y="594"
+y="604"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
@@ -493,39 +418,39 @@ iPhoneMirror
 
 <text
 x="70"
-y="616"
+y="626"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
 fill="#8b949e">
-[GENERAL]
+[DESKTOP]
 </text>
 
 <text
 x="162"
-y="616"
+y="626"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
-Report the usbmuxd requirement in the environment diagnostic
+Publish the desktop as a BLE HID peripheral through BlueZ
 </text>
 
 <line
 x1="50"
-y1="634"
+y1="644"
 x2="710"
-y2="634"
+y2="644"
 stroke="#30363d"/>
 
 <circle
 cx="55"
-cy="642"
+cy="662"
 r="4"
 fill="#3fb950"/>
 
 <text
 x="70"
-y="646"
+y="666"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
@@ -534,7 +459,7 @@ fill="#8b949e">
 
 <text
 x="162"
-y="646"
+y="666"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
@@ -544,7 +469,7 @@ iPhoneMirror
 
 <text
 x="70"
-y="668"
+y="688"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
@@ -554,7 +479,118 @@ fill="#8b949e">
 
 <text
 x="162"
-y="668"
+y="688"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#f0f6fc">
+Prove reverse control is feasible through BlueZ HOGP
+</text>
+
+<line
+x1="50"
+y1="706"
+x2="710"
+y2="706"
+stroke="#30363d"/>
+
+<circle
+cx="55"
+cy="724"
+r="4"
+fill="#3fb950"/>
+
+<text
+x="70"
+y="728"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+fill="#8b949e">
+2026-09-05
+</text>
+
+<text
+x="162"
+y="728"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#58a6ff">
+iPhoneMirror
+</text>
+
+<text
+x="70"
+y="750"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#8b949e">
+[GENERAL]
+</text>
+
+<text
+x="162"
+y="750"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#f0f6fc">
+Report the usbmuxd requirement in the environment
+</text>
+
+<text
+x="162"
+y="768"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#f0f6fc">
+diagnostic
+</text>
+
+<line
+x1="50"
+y1="786"
+x2="710"
+y2="786"
+stroke="#30363d"/>
+
+<circle
+cx="55"
+cy="804"
+r="4"
+fill="#3fb950"/>
+
+<text
+x="70"
+y="808"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+fill="#8b949e">
+2026-09-05
+</text>
+
+<text
+x="162"
+y="808"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#58a6ff">
+iPhoneMirror
+</text>
+
+<text
+x="70"
+y="830"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#8b949e">
+[DESKTOP]
+</text>
+
+<text
+x="162"
+y="830"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
@@ -563,18 +599,18 @@ Show the live iPad screen in the Avalonia window
 
 <line
 x1="50"
-y1="686"
+y1="848"
 x2="710"
-y2="686"
+y2="848"
 stroke="#30363d"/>
 
 <text
 x="50"
-y="695"
+y="954"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="9"
 fill="#8b949e">
-UPDATED 2026-09-06 07:38 UTC · GENERATED BY GITHUB ACTIONS
+UPDATED 2026-09-06 07:43 UTC · GENERATED BY GITHUB ACTIONS
 </text>
 
 </svg>
