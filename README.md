@@ -260,7 +260,7 @@ Linux networking from packets to policy.
 <img
   src="./profile/recent-activity.svg"
   alt="Recent Activity"
-  width="1000">
+  width="100%">
 
 </div>
 
