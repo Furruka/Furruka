@@ -1,9 +1,9 @@
 name: Generate Contribution Snake
 
 on:
+workflow_dispatch:
 schedule:
 - cron: "0 0 * * *"
-workflow_dispatch:
 
 permissions:
 contents: write
@@ -12,18 +12,18 @@ jobs:
 generate:
 runs-on: ubuntu-latest
 
+```
 steps:
   - name: Generate snake
     uses: Platane/snk@v3
     with:
       github_user_name: Furruka
-      outputs: |
-        dist/github-contribution-grid-snake.svg
-        dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+      outputs: dist/github-contribution-grid-snake.svg
 
   - name: Publish snake
     uses: peaceiris/actions-gh-pages@v4
     with:
       github_token: ${{ secrets.GITHUB_TOKEN }}
-      publish_dir: ./dist
       publish_branch: output
+      publish_dir: ./dist
+```
