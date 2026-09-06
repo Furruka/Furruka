@@ -1,4 +1,3 @@
-````markdown
 <div align="center">
 
 # `FURRUKA`
@@ -373,4 +372,3 @@ If something here helps you, feel free to explore the repositories.
 <sub>Powered by curiosity, Linux and an unreasonable number of logs.</sub>
 
 </div>
-```
