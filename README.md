@@ -119,18 +119,18 @@ Networking          ████████████████░░░░
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
 │  MT6895 / ARM64                                             │
-│  └── Mainline Linux 6.x                                    │
-│      ├── Device Tree                                       │
-│      ├── DRM / KMS                                         │
+│  └── Mainline Linux 6.x                                     │
+│      ├── Device Tree                                        │
+│      ├── DRM / KMS                                          │
 │      ├── DSI                                                │
 │      ├── DSC                                                │
-│      └── Display bring-up                                  │
+│      └── Display bring-up                                   │
 │                                                             │
 │  Android                                                    │
 │  ├── Custom Kernel                                          │
-│  ├── GSI                                                     │
+│  ├── GSI                                                    │
 │  ├── Custom ROM                                             │
-│  └── Mainline experiments                                  │
+│  └── Mainline experiments                                   │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -309,28 +309,16 @@ Linux networking from packets to policy.
 
 ---
 
-## `DEVELOPMENT LOG`
+## `DEVELOPER LOG`
 
-```text
-2026 ─────────────────────────────────────────────────────────
+<div align="center">
 
-[09]  Mainline Linux / Android kernel work
-      └── ARM64 / MediaTek / display pipeline
+<img
+  src="./profile/developer-log.svg"
+  alt="Furruka Developer Log"
+  width="100%">
 
-[08]  DRM / DSI / DSC debugging
-      └── tracing the path from userspace to panel
-
-[08]  Linux desktop / Wayland experiments
-      └── ARM64 mobile hardware
-
-[07]  Kernel bring-up
-      └── device tree / drivers / boot flow
-
-──────────────────────────────────────────────────────────────
-```
-
-> Hardware is honest.
-> The logs are just better at explaining why.
+</div>
 
 ---
 
