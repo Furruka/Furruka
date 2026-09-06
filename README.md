@@ -1,62 +1,196 @@
-# 👋 Hi, I'm Furruka
+# Furruka
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&center=true&vCenter=true&width=600&lines=Linux+Enthusiast;Android+Kernel+Developer;Mainline+Linux+Explorer;Open+Source+Enjoyer" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=2800&pause=900&color=7AA2F7&center=true&vCenter=true&width=720&lines=LOW-LEVEL+SYSTEMS+EXPLORER;LINUX+%2F+ANDROID+%2F+KERNEL;MAINLINE+LINUX+%2F+ARM64+%2F+DRIVERS;BREAKING+THINGS+BELOW+THE+ABSTRACTION+LAYER" />
 </p>
 
 <p align="center">
   <a href="https://github.com/Furruka">
-    <img src="https://komarev.com/ghpvc/?username=Furruka&label=Profile%20Views&color=0e75b6&style=flat" />
+    <img src="https://img.shields.io/badge/GitHub-Furruka-24292f?style=flat-square&logo=github" />
   </a>
+  <img src="https://img.shields.io/badge/Linux-Enthusiast-FCC624?style=flat-square&logo=linux&logoColor=black" />
+  <img src="https://img.shields.io/badge/Android-Kernel-3DDC84?style=flat-square&logo=android&logoColor=white" />
+  <img src="https://img.shields.io/badge/ARM64-Developer-0091BD?style=flat-square" />
 </p>
 
 ---
 
-## 🧑‍💻 About Me
+## `whoami`
+
+> **I build things below the abstraction layer.**
+
+I'm interested in the parts of computing that most applications never need to see:
+
+* 🐧 Linux kernel & system internals
+* 📱 Android kernel / custom ROM / GSI
+* ⚙️ Mainline Linux on mobile hardware
+* 🧩 Device drivers & hardware bring-up
+* 🖥️ DRM / display pipeline / Wayland
+* 🔬 SoC debugging & reverse engineering
+* 🌐 Linux networking & embedded systems
+
+Currently exploring the boundary between **Android hardware and upstream Linux**.
+
+---
+
+## `SYSTEM PROFILE`
 
 ```text
-🐧 Linux enthusiast
-📱 Android / Custom ROM / Kernel
-⚙️ Mainline Linux & hardware bring-up
-🛠️ Embedded systems & low-level debugging
-💻 Arch Linux user
-🤖 AI-assisted development
-🌱 Always learning something new
+┌─────────────────────────────────────────────────────────┐
+│                     FURRUKA SYSTEM                      │
+├──────────────────┬──────────────────────────────────────┤
+│ Primary OS       │ Arch Linux                           │
+│ Desktop          │ KDE Plasma / Wayland                │
+│ Architecture     │ x86_64 / ARM64                      │
+│ Main Language    │ C / C++                              │
+│ Scripting        │ Bash / Python                       │
+│ Kernel           │ Linux                                │
+│ Focus            │ Android / Mainline / Drivers        │
+└──────────────────┴──────────────────────────────────────┘
 ```
 
 ---
 
-## 🔧 What I'm Working On
-
-* 🐧 Mainline Linux on Android devices
-* ⚙️ Linux kernel bring-up & driver development
-* 📱 Android kernels / GSI / custom ROMs
-* 🖥️ Linux desktop & Wayland
-* 🌐 Networking / DNS / soft routers
-* 🔍 Hardware and kernel debugging
-
----
-
-## 🛠️ Tech Stack
+## `ENGINEERING STACK`
 
 <p align="center">
-
-<img src="https://skillicons.dev/icons?i=linux,arch,bash,c,cpp,python,git,github,android,cmake,vim,vscode" />
-
+  <img src="https://skillicons.dev/icons?i=linux,arch,bash,c,cpp,python,git,github,android,cmake,vim,vscode" />
 </p>
+
+```text
+LOW LEVEL
+██████████████████████████████████████  Linux Kernel
+██████████████████████████████████░░░░  Android
+████████████████████████████████░░░░░░  ARM64
+██████████████████████████████░░░░░░░░  Device Drivers
+
+SYSTEMS
+████████████████████████████████████░░  Linux
+███████████████████████████████░░░░░░░  Networking
+█████████████████████████████░░░░░░░░░  Wayland
+████████████████████████████░░░░░░░░░░  Embedded
+
+LANGUAGES
+████████████████████████████████████░░  C
+███████████████████████████████░░░░░░░  C++
+████████████████████████████░░░░░░░░░  Python
+██████████████████████████░░░░░░░░░░░  Shell
+```
 
 ---
 
-## 📊 GitHub Stats
+## `CURRENTLY BUILDING`
+
+### 🐧 Mainline Linux
+
+Bringing modern Linux to hardware originally designed around vendor Android kernels.
+
+```text
+Vendor Kernel
+     │
+     ├── DTS
+     ├── Drivers
+     ├── Firmware
+     └── Hardware quirks
+          │
+          ▼
+     Mainline Linux
+          │
+          ├── DRM
+          ├── Display
+          ├── Power
+          ├── Audio
+          └── SoC
+```
+
+### 📱 Android / Linux
+
+Exploring the relationship between:
+
+```text
+Android
+   │
+   ├── AOSP
+   ├── GKI
+   ├── Vendor Modules
+   └── HAL
+        │
+        ▼
+Linux Kernel
+   │
+   ├── DRM
+   ├── Media
+   ├── GPU
+   ├── Audio
+   └── SoC
+```
+
+---
+
+## `PROJECT LAB`
+
+<table>
+<tr>
+<td width="50%">
+
+### 🐧 Kernel
+
+Linux kernel development, debugging and upstream-oriented work.
+
+**Focus**
+
+`Kernel` · `Drivers` · `ARM64` · `DTS`
+
+</td>
+
+<td width="50%">
+
+### 📱 Android
+
+Custom kernels, ROMs, GSI and Android/Linux integration.
+
+**Focus**
+
+`AOSP` · `GKI` · `GSI` · `Custom ROM`
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+### 🖥️ Display
+
+DRM/KMS, display pipelines and mobile display hardware.
+
+**Focus**
+
+`DRM` · `DSI` · `DSC` · `Wayland`
+
+</td>
+
+<td>
+
+### 🌐 Networking
+
+Linux networking, DNS, routing and embedded systems.
+
+**Focus**
+
+`DNS` · `nftables` · `TProxy` · `Router`
+
+</td>
+</tr>
+</table>
+
+---
+
+## `GITHUB TELEMETRY`
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Furruka&show_icons=true&hide_border=true&count_private=true" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Furruka&layout=compact&hide_border=true" height="170" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Furruka&show_icons=true&hide_border=true&count_private=true" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Furruka&layout=compact&hide_border=true" />
 </p>
-
----
-
-## 🔥 Contribution Streak
 
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=Furruka&hide_border=true" />
@@ -64,7 +198,7 @@
 
 ---
 
-## 📈 Contribution Graph
+## `ACTIVITY MAP`
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Furruka&hide_border=true" />
@@ -72,60 +206,79 @@
 
 ---
 
-## 🚀 Featured Projects
-
-| Project               | Description                                        |
-| --------------------- | -------------------------------------------------- |
-| 🐧 **Linux Kernel**   | Mainline Linux bring-up and kernel development     |
-| 📱 **Android Kernel** | Android device kernel development                  |
-| ⚙️ **Mainline Linux** | Bringing Android hardware closer to upstream Linux |
-| 🌐 **Networking**     | DNS, routing and network optimization              |
-
-> More projects coming soon...
-
----
-
-## 🐧 Linux
+## `DEVELOPMENT LOG`
 
 ```text
-OS          : Arch Linux
-Desktop     : KDE Plasma
-Session     : Wayland
-Shell       : Bash / Zsh
-Editor      : Vim / VS Code
+2026 ────────────────────────────────────────────────
+
+[01] Android Kernel
+     └─ Kernel bring-up / debugging
+
+[02] Mainline Linux
+     └─ ARM64 / SoC / upstream development
+
+[03] Display
+     └─ DRM / DSI / DSC / KMS
+
+[04] Linux Desktop
+     └─ Arch Linux / KDE / Wayland
+
+[05] Networking
+     └─ DNS / nftables / embedded routing
 ```
 
 ---
 
-## 💡 Currently Learning
+## `TOOLS I LIVE IN`
 
 ```text
-Linux Kernel Internals
-        ↓
-Device Drivers
-        ↓
-DRM / Display
-        ↓
-MediaTek SoC
-        ↓
-Mainline Linux
+OS              Arch Linux
+Desktop         KDE Plasma
+Session         Wayland
+Shell           Bash
+Editor          Vim / VS Code
+Build           Make / CMake / Ninja
+Version Control Git
+Debugging       GDB / printk / ftrace
 ```
 
 ---
 
-## 🌐 Find Me
+## `PHILOSOPHY`
 
-<p align="center">
+> **If the abstraction leaks, go one layer deeper.**
 
-<a href="https://github.com/Furruka">
-  <img src="https://img.shields.io/badge/GitHub-Furruka-181717?style=for-the-badge&logo=github" />
-</a>
-
-</p>
+```text
+Application
+     ↓
+Framework
+     ↓
+Userspace
+     ↓
+Kernel
+     ↓
+Driver
+     ↓
+Hardware
+     ↓
+       ← this is where things get interesting
+```
 
 ---
 
-## 🐍 Contribution Snake
+## `OPEN SOURCE`
+
+Most of my work lives around Linux, Android and hardware.
+
+If something here is useful to you:
+
+**⭐ Star it · 🐛 Report it · 🔧 Improve it**
+
+That's what open source is about.
+
+---
+
+## `CONTRIBUTION`
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Furruka/Furruka/output/github-contribution-grid-snake.svg" />
@@ -135,8 +288,8 @@ Mainline Linux
 
 <p align="center">
 
-### ⭐ If you find my projects interesting, consider giving them a star!
+`Furruka` · Linux · Android · Kernel · Mainline
 
-**Thanks for visiting my profile!**
+**Thanks for stopping by.**
 
 </p>
