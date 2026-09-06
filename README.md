@@ -74,7 +74,7 @@ ARM64               ████████████████████
 Android             ██████████████████░░
 Embedded Linux      █████████████████░░░
 Wayland             ███████████████░░░░░
-Networking           ████████████████░░░░
+Networking          ████████████████░░░░
 ```
 
 </td>
@@ -260,6 +260,19 @@ Linux networking from packets to policy.
 <img
   src="./profile/recent-activity.svg"
   alt="Recent Activity"
+  width="100%">
+
+</div>
+
+---
+
+## `YEAR IN CODE`
+
+<div align="center">
+
+<img
+  src="./profile/year-in-code.svg"
+  alt="Furruka Year In Code"
   width="100%">
 
 </div>
