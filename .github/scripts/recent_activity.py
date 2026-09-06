@@ -1,6 +1,6 @@
 import os
 from collections import Counter
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone
 from pathlib import Path
 
 import requests
@@ -21,13 +21,16 @@ HEADERS = {
     "X-GitHub-Api-Version": "2022-11-28",
 }
 
-# Profile repository should never be counted as a development repo.
 PROFILE_REPO = USER.lower()
 
-# Limit API usage.
-MAX_REPOSITORIES = 30
-COMMITS_PER_REPOSITORY = 10
+# How many recent commits to display.
 RECENT_COMMITS_TO_DISPLAY = 8
+
+# How many repositories to show on the right panel.
+TOP_REPOSITORIES_TO_DISPLAY = 6
+
+# GitHub returns max 100 items per page.
+PER_PAGE = 100
 
 
 # ============================================================
@@ -52,22 +55,29 @@ def api_get(url: str, params=None):
 
 
 # ============================================================
-# Repository discovery
+# Get repositories
 # ============================================================
 
 def get_repositories():
-    """Get user's non-fork, non-archived repositories."""
+    """
+    Get all repositories owned by the user.
+
+    Forks are INCLUDED.
+
+    The profile repository is excluded separately.
+    """
 
     repositories = []
 
-    for page in range(1, 11):
+    for page in range(1, 21):
+
         data = api_get(
             f"{API}/users/{USER}/repos",
             {
-                "type": "owner",
-                "sort": "pushed",
+                "type": "all",
+                "sort": "updated",
                 "direction": "desc",
-                "per_page": 100,
+                "per_page": PER_PAGE,
                 "page": page,
             },
         )
@@ -77,60 +87,61 @@ def get_repositories():
 
         repositories.extend(data)
 
-        if len(data) < 100:
+        if len(data) < PER_PAGE:
             break
 
     filtered = []
 
     for repo in repositories:
+
         name = repo.get("name", "")
 
-        # Exclude:
-        # - profile README repository
-        # - forks
-        # - archived repositories
-        # - disabled repositories
+        # Exclude our Profile README repository.
         if name.lower() == PROFILE_REPO:
             continue
 
-        if repo.get("fork"):
-            continue
-
-        if repo.get("archived"):
-            continue
-
+        # Disabled repositories cannot be queried normally.
         if repo.get("disabled"):
             continue
 
+        # IMPORTANT:
+        # Fork repositories are intentionally NOT excluded.
         filtered.append(repo)
 
     return filtered
 
 
 # ============================================================
-# Commit discovery
+# Get commits
 # ============================================================
 
 def get_repository_commits(repo):
-    """Get recent commits authored by this GitHub user."""
+    """
+    Get recent commits authored by this user.
+
+    The GitHub API's author parameter accepts
+    the GitHub username.
+    """
 
     owner = repo["owner"]["login"]
     name = repo["name"]
 
     try:
+
         return api_get(
             f"{API}/repos/{owner}/{name}/commits",
             {
                 "author": USER,
-                "per_page": COMMITS_PER_REPOSITORY,
+                "per_page": PER_PAGE,
             },
         )
 
     except requests.HTTPError as exc:
+
         print(
-            f"Skipping {owner}/{name}: "
-            f"{exc}"
+            f"Skipping {owner}/{name}: {exc}"
         )
+
         return []
 
 
@@ -139,7 +150,7 @@ def get_repository_commits(repo):
 # ============================================================
 
 def escape_xml(text: str) -> str:
-    """Escape text for safe insertion into SVG/XML."""
+    """Escape text before inserting it into SVG."""
 
     return (
         str(text)
@@ -152,24 +163,46 @@ def escape_xml(text: str) -> str:
 
 
 # ============================================================
-# Data collection
+# Repository discovery
 # ============================================================
 
 repositories = get_repositories()
 
-# Only inspect the most recently pushed repositories.
-repositories_to_scan = repositories[:MAX_REPOSITORIES]
+print(
+    f"Repositories discovered: {len(repositories)}"
+)
+
+
+# ============================================================
+# Commit collection
+# ============================================================
 
 all_commits = []
 
-for repo in repositories_to_scan:
+for repo in repositories:
+
+    print(
+        f"Scanning: "
+        f"{repo['full_name']}"
+    )
+
     commits = get_repository_commits(repo)
 
     for commit in commits:
-        commit_data = commit.get("commit", {})
-        author_data = commit_data.get("author", {})
 
-        date_string = author_data.get("date")
+        commit_data = commit.get(
+            "commit",
+            {},
+        )
+
+        author_data = commit_data.get(
+            "author",
+            {},
+        )
+
+        date_string = author_data.get(
+            "date"
+        )
 
         if not date_string:
             continue
@@ -185,10 +218,16 @@ for repo in repositories_to_scan:
             message = "(no commit message)"
 
         try:
+
             commit_date = datetime.fromisoformat(
-                date_string.replace("Z", "+00:00")
+                date_string.replace(
+                    "Z",
+                    "+00:00",
+                )
             )
+
         except ValueError:
+
             continue
 
         all_commits.append(
@@ -196,32 +235,50 @@ for repo in repositories_to_scan:
                 "repo": repo["name"],
                 "message": message,
                 "date": commit_date,
-                "sha": commit.get("sha", "")[:7],
+                "sha": commit.get(
+                    "sha",
+                    "",
+                )[:7],
             }
         )
 
 
-# Newest first.
+# ============================================================
+# Sort commits
+# ============================================================
+
 all_commits.sort(
     key=lambda item: item["date"],
     reverse=True,
 )
 
-recent_commits = all_commits[
-    :RECENT_COMMITS_TO_DISPLAY
-]
+
+recent_commits = (
+    all_commits[
+        :RECENT_COMMITS_TO_DISPLAY
+    ]
+)
 
 
 # ============================================================
-# Repository activity ranking
+# Repository activity
 # ============================================================
 
 repo_activity = Counter()
 
 for commit in all_commits:
-    repo_activity[commit["repo"]] += 1
 
-top_repositories = repo_activity.most_common(5)
+    repo_activity[
+        commit["repo"]
+    ] += 1
+
+
+top_repositories = (
+    repo_activity
+    .most_common(
+        TOP_REPOSITORIES_TO_DISPLAY
+    )
+)
 
 
 # ============================================================
@@ -239,31 +296,33 @@ MUTED = "#8b949e"
 ACCENT = "#58a6ff"
 GREEN = "#3fb950"
 
-FONT = "JetBrains Mono, DejaVu Sans Mono, monospace"
+FONT = (
+    "JetBrains Mono, "
+    "DejaVu Sans Mono, "
+    "monospace"
+)
 
 
 # ============================================================
 # Repository name shortening
 # ============================================================
 
-def shorten_repository_name(name: str, maximum: int = 17) -> str:
-    """
-    Keep repository names inside the right-hand panel.
-
-    Example:
-        very-long-repository-name
-        ->
-        very-long-repo...
-    """
+def shorten_repository_name(
+    name: str,
+    maximum: int = 17,
+) -> str:
 
     if len(name) <= maximum:
         return name
 
-    return name[: maximum - 3] + "..."
+    return (
+        name[: maximum - 3]
+        + "..."
+    )
 
 
 # ============================================================
-# SVG generation
+# Generate SVG
 # ============================================================
 
 svg = f'''<svg
@@ -281,7 +340,8 @@ height="100%"
 rx="12"
 fill="{BACKGROUND}"/>
 
-<!-- Header -->
+
+<!-- HEADER -->
 
 <text
 x="28"
@@ -310,7 +370,7 @@ y2="84"
 stroke="{BORDER}"/>
 
 
-<!-- Recent commits panel -->
+<!-- RECENT COMMITS -->
 
 <rect
 x="28"
@@ -334,7 +394,7 @@ RECENT COMMITS
 
 
 # ============================================================
-# Recent commits
+# Recent commits panel
 # ============================================================
 
 y = 172
@@ -358,12 +418,19 @@ if recent_commits:
 
         message = item["message"]
 
-        # Keep commit text inside the left panel.
         if len(message) > 49:
-            message = message[:46] + "..."
+            message = (
+                message[:46]
+                + "..."
+            )
 
-        repo_name = escape_xml(repo_name)
-        message = escape_xml(message)
+        repo_name = escape_xml(
+            repo_name
+        )
+
+        message = escape_xml(
+            message
+        )
 
         svg += f'''
 <circle
@@ -419,13 +486,13 @@ y="190"
 font-family="{FONT}"
 font-size="12"
 fill="{MUTED}">
-No recent public commits found.
+No recent commits found.
 </text>
 '''
 
 
 # ============================================================
-# Active repositories panel
+# ACTIVE REPOSITORIES
 # ============================================================
 
 svg += f'''
@@ -458,7 +525,10 @@ y = 180
 
 if top_repositories:
 
-    for index, (repo_name, count) in enumerate(
+    for index, (
+        repo_name,
+        count,
+    ) in enumerate(
         top_repositories,
         start=1,
     ):
@@ -468,7 +538,9 @@ if top_repositories:
             maximum=17,
         )
 
-        short_name = escape_xml(short_name)
+        short_name = escape_xml(
+            short_name
+        )
 
         svg += f'''
 <text
@@ -518,7 +590,7 @@ No repository activity.
 
 
 # ============================================================
-# Summary information
+# Summary
 # ============================================================
 
 updated = datetime.now(
@@ -527,9 +599,17 @@ updated = datetime.now(
     "%Y-%m-%d %H:%M UTC"
 )
 
-total_repositories = len(repositories)
+total_repositories = len(
+    repositories
+)
 
-total_commits_indexed = len(all_commits)
+total_commits_indexed = len(
+    all_commits
+)
+
+active_repository_count = len(
+    repo_activity
+)
 
 
 svg += f'''
@@ -565,7 +645,7 @@ y="515"
 font-family="{FONT}"
 font-size="9"
 fill="{MUTED}">
-COMMITS INDEXED
+ACTIVE
 </text>
 
 <text
@@ -575,7 +655,7 @@ font-family="{FONT}"
 font-size="9"
 text-anchor="end"
 fill="{TEXT}">
-{total_commits_indexed}
+{active_repository_count}
 </text>
 
 <text
@@ -584,12 +664,31 @@ y="545"
 font-family="{FONT}"
 font-size="9"
 fill="{MUTED}">
-UPDATED
+COMMITS INDEXED
 </text>
 
 <text
 x="710"
 y="545"
+font-family="{FONT}"
+font-size="9"
+text-anchor="end"
+fill="{TEXT}">
+{total_commits_indexed}
+</text>
+
+<text
+x="528"
+y="575"
+font-family="{FONT}"
+font-size="9"
+fill="{MUTED}">
+UPDATED
+</text>
+
+<text
+x="710"
+y="575"
 font-family="{FONT}"
 font-size="9"
 text-anchor="end"
@@ -611,7 +710,7 @@ AUTOMATED VIA GITHUB ACTIONS
 
 
 # ============================================================
-# Write SVG
+# Write output
 # ============================================================
 
 output = Path(
@@ -633,12 +732,28 @@ output.write_text(
 # Console output
 # ============================================================
 
+print()
 print("=" * 60)
 print("Furruka Recent Activity")
 print("=" * 60)
-print(f"Repositories found : {total_repositories}")
-print(f"Repositories scanned: {len(repositories_to_scan)}")
-print(f"Commits indexed    : {total_commits_indexed}")
-print(f"Recent commits     : {len(recent_commits)}")
-print(f"Output             : {output}")
+print(
+    f"Repositories discovered : "
+    f"{total_repositories}"
+)
+print(
+    f"Repositories with commits: "
+    f"{active_repository_count}"
+)
+print(
+    f"Commits indexed         : "
+    f"{total_commits_indexed}"
+)
+print(
+    f"Recent commits displayed: "
+    f"{len(recent_commits)}"
+)
+print(
+    f"Output                  : "
+    f"{output}"
+)
 print("=" * 60)
