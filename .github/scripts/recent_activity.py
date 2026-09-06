@@ -130,7 +130,7 @@ def escape(text):
     )
 
 
-WIDTH = 1000
+WIDTH = 760
 HEIGHT = 700
 
 bg = "#0d1117"
@@ -144,45 +144,46 @@ green = "#3fb950"
 font = "JetBrains Mono, DejaVu Sans Mono, monospace"
 
 svg = f'''<svg xmlns="http://www.w3.org/2000/svg"
-width="{WIDTH}"
+width="100%"
 height="{HEIGHT}"
-viewBox="0 0 {WIDTH} {HEIGHT}">
+viewBox="0 0 {WIDTH} {HEIGHT}"
+preserveAspectRatio="xMidYMid meet">
 
-<rect width="100%" height="100%" fill="{bg}"/>
+<rect width="100%" height="100%" rx="12" fill="{bg}"/>
 
-<text x="42" y="48"
+<text x="28" y="42"
 font-family="{font}"
-font-size="26"
+font-size="22"
 font-weight="700"
 fill="{text}">
 FURRUKA // RECENT ACTIVITY
 </text>
 
-<text x="42" y="76"
+<text x="28" y="66"
 font-family="{font}"
-font-size="13"
+font-size="11"
 fill="{muted}">
 LIVE PROJECT TELEMETRY
 </text>
 
-<line x1="42" y1="96" x2="958" y2="96"
+<line x1="28" y1="84" x2="732" y2="84"
 stroke="{border}"/>
 
-<rect x="42" y="120" width="610" height="500"
+<rect x="28" y="106" width="462" height="510"
 rx="10"
 fill="{panel}"
 stroke="{border}"/>
 
-<text x="68" y="155"
+<text x="50" y="138"
 font-family="{font}"
-font-size="16"
+font-size="14"
 font-weight="700"
 fill="{text}">
 RECENT COMMITS
 </text>
 '''
 
-y = 195
+y = 172
 
 if recent:
     for item in recent:
@@ -192,44 +193,44 @@ if recent:
         repo = escape(item["repo"])
         message = escape(item["message"])
 
-        if len(message) > 58:
-            message = message[:55] + "..."
+        if len(message) > 47:
+            message = message[:44] + "..."
 
         svg += f'''
-<circle cx="74" cy="{y - 5}" r="5" fill="{green}"/>
+<circle cx="56" cy="{y - 4}" r="4" fill="{green}"/>
 
-<text x="92" y="{y}"
+<text x="70" y="{y}"
 font-family="{font}"
-font-size="12"
+font-size="10"
 fill="{muted}">
-{date_text} UTC
+{date_text}
 </text>
 
-<text x="250" y="{y}"
+<text x="218" y="{y}"
 font-family="{font}"
-font-size="12"
+font-size="10"
 font-weight="700"
 fill="{accent}">
 {repo}
 </text>
 
-<text x="92" y="{y + 24}"
+<text x="70" y="{y + 21}"
 font-family="{font}"
-font-size="13"
+font-size="11"
 fill="{text}">
 {message}
 </text>
 
-<line x1="68" y1="{y + 45}" x2="625" y2="{y + 45}"
+<line x1="50" y1="{y + 40}" x2="468" y2="{y + 40}"
 stroke="{border}"/>
 '''
 
-        y += 58
+        y += 57
 else:
     svg += f'''
-<text x="68" y="205"
+<text x="50" y="190"
 font-family="{font}"
-font-size="13"
+font-size="12"
 fill="{muted}">
 No recent public commits found.
 </text>
@@ -237,57 +238,60 @@ No recent public commits found.
 
 
 svg += f'''
-<rect x="680" y="120" width="278" height="500"
+<rect x="506" y="106" width="226" height="510"
 rx="10"
 fill="{panel}"
 stroke="{border}"/>
 
-<text x="705" y="155"
+<text x="528" y="138"
 font-family="{font}"
-font-size="16"
+font-size="14"
 font-weight="700"
 fill="{text}">
-ACTIVE REPOSITORIES
+ACTIVE REPOS
 </text>
 '''
 
-y = 200
+y = 180
 
 if top_repositories:
     for index, (repo, count) in enumerate(top_repositories, start=1):
         repo = escape(repo)
 
+        if len(repo) > 18:
+            repo = repo[:15] + "..."
+
         svg += f'''
-<text x="706" y="{y}"
+<text x="528" y="{y}"
 font-family="{font}"
-font-size="13"
+font-size="11"
 fill="{muted}">
 {index:02d}
 </text>
 
-<text x="745" y="{y}"
+<text x="557" y="{y}"
 font-family="{font}"
-font-size="13"
+font-size="11"
 font-weight="700"
 fill="{text}">
 {repo}
 </text>
 
-<text x="915" y="{y}"
+<text x="708" y="{y}"
 font-family="{font}"
-font-size="13"
+font-size="11"
 text-anchor="end"
 fill="{accent}">
 {count}
 </text>
 '''
 
-        y += 55
+        y += 46
 else:
     svg += f'''
-<text x="706" y="200"
+<text x="528" y="180"
 font-family="{font}"
-font-size="13"
+font-size="11"
 fill="{muted}">
 No repository activity.
 </text>
@@ -299,52 +303,59 @@ updated = datetime.now(timezone.utc).strftime(
 )
 
 svg += f'''
-<line x1="705" y1="510" x2="935" y2="510"
+<line x1="528" y1="455" x2="710" y2="455"
 stroke="{border}"/>
 
-<text x="705" y="540"
+<text x="528" y="485"
 font-family="{font}"
-font-size="11"
+font-size="9"
 fill="{muted}">
 REPOSITORIES
 </text>
 
-<text x="935" y="540"
+<text x="710" y="485"
 font-family="{font}"
-font-size="11"
+font-size="9"
 text-anchor="end"
 fill="{text}">
 {len(repositories)}
 </text>
 
-<text x="705" y="570"
+<text x="528" y="515"
 font-family="{font}"
-font-size="11"
+font-size="9"
 fill="{muted}">
 COMMITS INDEXED
 </text>
 
-<text x="935" y="570"
+<text x="710" y="515"
 font-family="{font}"
-font-size="11"
+font-size="9"
 text-anchor="end"
 fill="{text}">
 {len(all_commits)}
 </text>
 
-<text x="705" y="600"
+<text x="528" y="545"
 font-family="{font}"
-font-size="10"
+font-size="9"
 fill="{muted}">
 UPDATED
 </text>
 
-<text x="935" y="600"
+<text x="710" y="545"
 font-family="{font}"
-font-size="10"
+font-size="9"
 text-anchor="end"
 fill="{text}">
 {updated}
+</text>
+
+<text x="28" y="650"
+font-family="{font}"
+font-size="10"
+fill="{muted}">
+AUTOMATED VIA GITHUB ACTIONS
 </text>
 
 </svg>
