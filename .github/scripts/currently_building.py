@@ -535,26 +535,14 @@ FONT = (
 # ============================================================
 
 def project_height(project):
-    """
-    Calculate the amount of vertical space required
-    by one project.
-    """
-
-    categories = project[
-        "categories"
-    ]
+    categories = project["categories"]
 
     category_count = min(
         3,
         len(categories),
     )
 
-    # Compact layout.
-    return (
-        92
-        + category_count * 14
-    )
-
+    return 68 + category_count * 5
 
 # ============================================================
 # Dynamic overall height
