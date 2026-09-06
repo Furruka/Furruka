@@ -40,7 +40,7 @@ fill="#c9d1d9">
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="17"
 fill="#c9d1d9">
-04-08  ░  ▓  ░  ░  ░  ░  █
+04-08  ░  ▒  ░  ░  ░  ░  █
 </text>
 
 <text x="40" y="236"
@@ -54,14 +54,14 @@ fill="#c9d1d9">
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="17"
 fill="#c9d1d9">
-12-16  ▒  ░  ░  ░  ░  ░  ░
+12-16  ░  ░  ░  ░  ░  ░  ░
 </text>
 
 <text x="40" y="312"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="17"
 fill="#c9d1d9">
-16-20  ░  ░  ░  ░  ░  ░  ▒
+16-20  ░  ░  ░  ░  ░  ░  ░
 </text>
 
 <text x="40" y="350"
@@ -85,7 +85,7 @@ COMMITS
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="13"
 fill="#f0f6fc">
-61
+83
 </text>
 
 <text x="240" y="438"
