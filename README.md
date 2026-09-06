@@ -115,27 +115,14 @@ Networking          ████████████████░░░░
 
 ## `CURRENTLY BUILDING`
 
-```text
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│  MT6895 / ARM64                                             │
-│  └── Mainline Linux 6.x                                     │
-│      ├── Device Tree                                        │
-│      ├── DRM / KMS                                          │
-│      ├── DSI                                                │
-│      ├── DSC                                                │
-│      └── Display bring-up                                   │
-│                                                             │
-│  Android                                                    │
-│  ├── Custom Kernel                                          │
-│  ├── GSI                                                    │
-│  ├── Custom ROM                                             │
-│  └── Mainline experiments                                   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
+<div align="center">
 
-> **Current mission:** upstream mobile hardware, one subsystem at a time.
+<img
+  src="./profile/currently-building.svg"
+  alt="Furruka Currently Building"
+  width="100%">
+
+</div>
 
 ---
 
