@@ -1,129 +1,142 @@
-# Furruka
+````markdown
+<div align="center">
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=2800&pause=900&color=7AA2F7&center=true&vCenter=true&width=720&lines=LOW-LEVEL+SYSTEMS+EXPLORER;LINUX+%2F+ANDROID+%2F+KERNEL;MAINLINE+LINUX+%2F+ARM64+%2F+DRIVERS;BREAKING+THINGS+BELOW+THE+ABSTRACTION+LAYER" />
-</p>
+# `FURRUKA`
 
-<p align="center">
-  <a href="https://github.com/Furruka">
-    <img src="https://img.shields.io/badge/GitHub-Furruka-24292f?style=flat-square&logo=github" />
-  </a>
-  <img src="https://img.shields.io/badge/Linux-Enthusiast-FCC624?style=flat-square&logo=linux&logoColor=black" />
-  <img src="https://img.shields.io/badge/Android-Kernel-3DDC84?style=flat-square&logo=android&logoColor=white" />
-  <img src="https://img.shields.io/badge/ARM64-Developer-0091BD?style=flat-square" />
-</p>
+### LOW-LEVEL SYSTEMS LAB
+
+`Linux` · `Android` · `ARM64` · `Kernel` · `Mainline` · `DRM` · `Wayland`
+
+<br>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=2800&pause=900&color=58A6FF&center=true&vCenter=true&width=650&lines=I+build+things+below+the+abstraction+layer.;Kernel+%E2%86%92+Hardware+%E2%86%92+Reality.;If+the+abstraction+leaks%2C+go+one+layer+deeper." alt="Typing SVG">
+
+<br><br>
+
+<a href="https://github.com/Furruka">
+<img src="https://img.shields.io/github/followers/Furruka?label=Followers&style=flat-square&logo=github">
+</a>
+&nbsp;
+<a href="https://github.com/Furruka?tab=repositories">
+<img src="https://img.shields.io/github/stars/Furruka?label=Stars&style=flat-square&logo=github">
+</a>
+&nbsp;
+<img src="https://komarev.com/ghpvc/?username=Furruka&style=flat-square&label=PROFILE+VIEWS">
+
+</div>
 
 ---
 
-## `whoami`
+## `WHOAMI`
 
-> **I build things below the abstraction layer.**
+```text
+NAME        Furruka
+FOCUS       Low-level Linux / Android systems
+ARCH        ARM64
+KERNEL      Linux
+INTERESTS   Mainline · DRM/KMS · DSI · DSC · Wayland
+            Android · GSI · Custom ROM · Networking
 
-I'm interested in the parts of computing that most applications never need to see:
+CURRENTLY   Making mobile hardware behave on upstream Linux.
+````
 
-* 🐧 Linux kernel & system internals
-* 📱 Android kernel / custom ROM / GSI
-* ⚙️ Mainline Linux on mobile hardware
-* 🧩 Device drivers & hardware bring-up
-* 🖥️ DRM / display pipeline / Wayland
-* 🔬 SoC debugging & reverse engineering
-* 🌐 Linux networking & embedded systems
+I like working where software stops being abstract.
 
-Currently exploring the boundary between **Android hardware and upstream Linux**.
+Most of my time goes into **Linux kernels, Android internals, ARM64 platforms,
+display pipelines, device trees, and the strange places where hardware
+doesn't quite do what the documentation says it should.**
 
 ---
 
 ## `SYSTEM PROFILE`
 
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### `KERNEL`
+
 ```text
-┌─────────────────────────────────────────────────────────┐
-│                     FURRUKA SYSTEM                      │
-├──────────────────┬──────────────────────────────────────┤
-│ Primary OS       │ Arch Linux                           │
-│ Desktop          │ KDE Plasma / Wayland                │
-│ Architecture     │ x86_64 / ARM64                      │
-│ Main Language    │ C / C++                              │
-│ Scripting        │ Bash / Python                       │
-│ Kernel           │ Linux                                │
-│ Focus            │ Android / Mainline / Drivers        │
-└──────────────────┴──────────────────────────────────────┘
+Linux Kernel        ████████████████████
+Device Tree         ██████████████████░░
+Kernel Debugging    █████████████████░░░
+GKI / Android       ████████████████░░░░
+Mainline Porting    █████████████████░░░
 ```
+
+</td>
+
+<td width="50%" valign="top">
+
+### `PLATFORM`
+
+```text
+ARM64               ████████████████████
+Android             ██████████████████░░
+Embedded Linux      █████████████████░░░
+Wayland             ███████████████░░░░░
+Networking           ████████████████░░░░
+```
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## `ENGINEERING STACK`
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=linux,arch,bash,c,cpp,python,git,github,android,cmake,vim,vscode" />
-</p>
+### `LOW LEVEL`
 
-```text
-LOW LEVEL
-██████████████████████████████████████  Linux Kernel
-██████████████████████████████████░░░░  Android
-████████████████████████████████░░░░░░  ARM64
-██████████████████████████████░░░░░░░░  Device Drivers
+![C](https://img.shields.io/badge/C-0D1117?style=for-the-badge\&logo=c\&logoColor=A8B9CC)
+![C++](https://img.shields.io/badge/C%2B%2B-0D1117?style=for-the-badge\&logo=c%2B%2B\&logoColor=00599C)
+![Linux](https://img.shields.io/badge/Linux-0D1117?style=for-the-badge\&logo=linux\&logoColor=FCC624)
+![ARM64](https://img.shields.io/badge/ARM64-0D1117?style=for-the-badge\&logo=arm\&logoColor=0091BD)
+![Git](https://img.shields.io/badge/Git-0D1117?style=for-the-badge\&logo=git\&logoColor=F05032)
 
-SYSTEMS
-████████████████████████████████████░░  Linux
-███████████████████████████████░░░░░░░  Networking
-█████████████████████████████░░░░░░░░░  Wayland
-████████████████████████████░░░░░░░░░░  Embedded
+### `ANDROID`
 
-LANGUAGES
-████████████████████████████████████░░  C
-███████████████████████████████░░░░░░░  C++
-████████████████████████████░░░░░░░░░  Python
-██████████████████████████░░░░░░░░░░░  Shell
-```
+![Android](https://img.shields.io/badge/Android-0D1117?style=for-the-badge\&logo=android\&logoColor=3DDC84)
+![AOSP](https://img.shields.io/badge/AOSP-0D1117?style=for-the-badge\&logo=android\&logoColor=3DDC84)
+![LineageOS](https://img.shields.io/badge/LineageOS-0D1117?style=for-the-badge\&logo=lineageos\&logoColor=167C80)
+
+### `GRAPHICS & DISPLAY`
+
+![Wayland](https://img.shields.io/badge/Wayland-0D1117?style=for-the-badge\&logo=wayland\&logoColor=FFBC00)
+![Mesa](https://img.shields.io/badge/Mesa-0D1117?style=for-the-badge\&logo=mesa\&logoColor=FFFFFF)
+![DRM](https://img.shields.io/badge/DRM%2FKMS-0D1117?style=for-the-badge\&logo=linux\&logoColor=FCC624)
+
+### `NETWORKING`
+
+![nftables](https://img.shields.io/badge/nftables-0D1117?style=for-the-badge\&logo=linux\&logoColor=FCC624)
+![DNS](https://img.shields.io/badge/DNS-0D1117?style=for-the-badge\&logo=cloudflare\&logoColor=F38020)
+![IPv6](https://img.shields.io/badge/IPv6-0D1117?style=for-the-badge\&logo=internetexplorer\&logoColor=58A6FF)
 
 ---
 
 ## `CURRENTLY BUILDING`
 
-### 🐧 Mainline Linux
-
-Bringing modern Linux to hardware originally designed around vendor Android kernels.
-
 ```text
-Vendor Kernel
-     │
-     ├── DTS
-     ├── Drivers
-     ├── Firmware
-     └── Hardware quirks
-          │
-          ▼
-     Mainline Linux
-          │
-          ├── DRM
-          ├── Display
-          ├── Power
-          ├── Audio
-          └── SoC
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│  MT6895 / ARM64                                             │
+│  └── Mainline Linux 6.x                                    │
+│      ├── Device Tree                                       │
+│      ├── DRM / KMS                                         │
+│      ├── DSI                                                │
+│      ├── DSC                                                │
+│      └── Display bring-up                                  │
+│                                                             │
+│  Android                                                    │
+│  ├── Custom Kernel                                          │
+│  ├── GSI                                                     │
+│  ├── Custom ROM                                             │
+│  └── Mainline experiments                                  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
 ```
 
-### 📱 Android / Linux
-
-Exploring the relationship between:
-
-```text
-Android
-   │
-   ├── AOSP
-   ├── GKI
-   ├── Vendor Modules
-   └── HAL
-        │
-        ▼
-Linux Kernel
-   │
-   ├── DRM
-   ├── Media
-   ├── GPU
-   ├── Audio
-   └── SoC
-```
+> **Current mission:** upstream mobile hardware, one subsystem at a time.
 
 ---
 
@@ -131,53 +144,74 @@ Linux Kernel
 
 <table>
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 🐧 Kernel
+### 🐧 `MAINLINE LINUX`
 
-Linux kernel development, debugging and upstream-oriented work.
+Working on bringing mobile SoCs closer to a proper upstream Linux environment.
 
 **Focus**
 
-`Kernel` · `Drivers` · `ARM64` · `DTS`
+* ARM64
+* Device Tree
+* Kernel bring-up
+* MediaTek platforms
+* Mainline Linux
+* Hardware debugging
 
 </td>
 
-<td width="50%">
+<td width="50%" valign="top">
 
-### 📱 Android
+### 📱 `ANDROID`
 
-Custom kernels, ROMs, GSI and Android/Linux integration.
+Exploring the lower layers of the Android stack.
 
 **Focus**
 
-`AOSP` · `GKI` · `GSI` · `Custom ROM`
+* Android Kernel
+* GKI
+* GSI
+* AOSP
+* LineageOS
+* Custom ROMs
 
 </td>
 </tr>
 
 <tr>
-<td>
+<td width="50%" valign="top">
 
-### 🖥️ Display
+### 🖥️ `DISPLAY PIPELINE`
 
-DRM/KMS, display pipelines and mobile display hardware.
+The fun begins when the screen doesn't turn on.
 
 **Focus**
 
-`DRM` · `DSI` · `DSC` · `Wayland`
+* DRM / KMS
+* MIPI DSI
+* DSC
+* OVL / RDMA
+* Display Mutex
+* Panel bring-up
 
 </td>
 
-<td>
+<td width="50%" valign="top">
 
-### 🌐 Networking
+### 🌐 `NETWORKING`
 
-Linux networking, DNS, routing and embedded systems.
+Linux networking from packets to policy.
 
 **Focus**
 
-`DNS` · `nftables` · `TProxy` · `Router`
+* DNS
+* dnsmasq
+* nftables
+* TProxy
+* IPv6
+* Smart DNS
+* Embedded routers
 
 </td>
 </tr>
@@ -190,11 +224,11 @@ Linux networking, DNS, routing and embedded systems.
 <div align="center">
 
 <a href="https://github.com/Furruka">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=Furruka&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=transparent" />
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=Furruka&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=transparent">
 </a>
 
 <a href="https://github.com/Furruka">
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Furruka&layout=compact&langs_count=8&hide_border=true&theme=transparent" />
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Furruka&layout=compact&langs_count=8&hide_border=true&theme=transparent">
 </a>
 
 </div>
@@ -205,7 +239,7 @@ Linux networking, DNS, routing and embedded systems.
 
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Furruka&hide_border=true&background=00000000" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Furruka&hide_border=true&background=00000000" alt="GitHub Streak">
 
 </div>
 
@@ -228,92 +262,115 @@ Linux networking, DNS, routing and embedded systems.
 </picture>
 
 </div>
+
 ---
 
 ## `DEVELOPMENT LOG`
 
 ```text
-2026 ────────────────────────────────────────────────
+2026 ─────────────────────────────────────────────────────────
 
-[01] Android Kernel
-     └─ Kernel bring-up / debugging
+[09]  Mainline Linux / Android kernel work
+      └── ARM64 / MediaTek / display pipeline
 
-[02] Mainline Linux
-     └─ ARM64 / SoC / upstream development
+[08]  DRM / DSI / DSC debugging
+      └── tracing the path from userspace to panel
 
-[03] Display
-     └─ DRM / DSI / DSC / KMS
+[08]  Linux desktop / Wayland experiments
+      └── ARM64 mobile hardware
 
-[04] Linux Desktop
-     └─ Arch Linux / KDE / Wayland
+[07]  Kernel bring-up
+      └── device tree / drivers / boot flow
 
-[05] Networking
-     └─ DNS / nftables / embedded routing
+──────────────────────────────────────────────────────────────
 ```
+
+> Hardware is honest.
+> The logs are just better at explaining why.
 
 ---
 
 ## `TOOLS I LIVE IN`
 
 ```text
-OS              Arch Linux
-Desktop         KDE Plasma
-Session         Wayland
-Shell           Bash
-Editor          Vim / VS Code
-Build           Make / CMake / Ninja
-Version Control Git
-Debugging       GDB / printk / ftrace
+EDITOR
+  ├─ Neovim
+  └─ VS Code
+
+TERMINAL
+  ├─ Bash
+  ├─ Git
+  └─ SSH
+
+LINUX
+  ├─ Arch Linux
+  ├─ Mainline Kernel
+  └─ Embedded Linux
+
+ANDROID
+  ├─ AOSP
+  ├─ LineageOS
+  ├─ fastboot
+  └─ adb
+
+DEBUG
+  ├─ dmesg
+  ├─ ftrace
+  ├─ debugfs
+  ├─ sysfs
+  └─ register dumps
 ```
 
 ---
 
 ## `PHILOSOPHY`
 
-> **If the abstraction leaks, go one layer deeper.**
+<div align="center">
 
-```text
-Application
-     ↓
-Framework
-     ↓
-Userspace
-     ↓
-Kernel
-     ↓
-Driver
-     ↓
-Hardware
-     ↓
-       ← this is where things get interesting
-```
+### `READ THE CODE.`
+
+### `TRACE THE HARDWARE.`
+
+### `QUESTION THE ABSTRACTION.`
+
+### `FIX THE ROOT CAUSE.`
+
+</div>
 
 ---
 
 ## `OPEN SOURCE`
 
-Most of my work lives around Linux, Android and hardware.
+I enjoy working on projects where the interesting part is figuring out **why**
+something works — and even more when it doesn't.
 
-If something here is useful to you:
+If something here helps you, feel free to explore the repositories.
 
-**⭐ Star it · 🐛 Report it · 🔧 Improve it**
-
-That's what open source is about.
+```text
+┌───────────────────────────────────────────────┐
+│                                               │
+│   software → kernel → driver → hardware       │
+│                                               │
+│   that's where things get interesting.        │
+│                                               │
+└───────────────────────────────────────────────┘
+```
 
 ---
 
-## `CONTRIBUTION`
+<div align="center">
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Furruka/Furruka/output/github-contribution-grid-snake.svg" />
-</p>
+### `FURRUKA`
 
----
+`BUILD · BREAK · TRACE · FIX · REPEAT`
 
-<p align="center">
+<br>
 
-`Furruka` · Linux · Android · Kernel · Mainline
+<img src="https://raw.githubusercontent.com/Furruka/Furruka/output/github-contribution-grid-snake.svg" alt="Contribution Snake">
 
-**Thanks for stopping by.**
+<br><br>
 
-</p>
+<sub>Powered by curiosity, Linux and an unreasonable number of logs.</sub>
+
+</div>
+```
