@@ -577,12 +577,12 @@ PANEL_HEIGHT = (
 )
 
 
-FOOTER_HEIGHT = 55
+FOOTER_HEIGHT = 40
 
 FOOTER_Y = (
     HEADER_HEIGHT
     + PANEL_HEIGHT
-    + 32
+    + 18
 )
 
 HEIGHT = (
