@@ -187,23 +187,47 @@ Linux networking, DNS, routing and embedded systems.
 
 ## `GITHUB TELEMETRY`
 
-<p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Furruka&show_icons=true&hide_border=true&count_private=true" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Furruka&layout=compact&hide_border=true" />
-</p>
+<div align="center">
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=Furruka&hide_border=true" />
-</p>
+<a href="https://github.com/Furruka">
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=Furruka&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=transparent" />
+</a>
+
+<a href="https://github.com/Furruka">
+  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Furruka&layout=compact&langs_count=8&hide_border=true&theme=transparent" />
+</a>
+
+</div>
 
 ---
 
-## `ACTIVITY MAP`
+## `CONTRIBUTION MATRIX`
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Furruka&hide_border=true" />
-</p>
+<div align="center">
 
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Furruka&hide_border=true&background=00000000" />
+
+</div>
+
+---
+
+## `CONTRIBUTION SNAKE`
+
+<div align="center">
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/Furruka/Furruka/output/github-contribution-grid-snake-dark.svg">
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/Furruka/Furruka/output/github-contribution-grid-snake.svg">
+  <img
+    alt="GitHub Contribution Snake"
+    src="https://raw.githubusercontent.com/Furruka/Furruka/output/github-contribution-grid-snake.svg">
+</picture>
+
+</div>
 ---
 
 ## `DEVELOPMENT LOG`
