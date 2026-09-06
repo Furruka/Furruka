@@ -1,0 +1,385 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+width="1000"
+height="700"
+viewBox="0 0 1000 700">
+
+<rect width="100%" height="100%" fill="#0d1117"/>
+
+<text x="42" y="48"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="26"
+font-weight="700"
+fill="#f0f6fc">
+FURRUKA // RECENT ACTIVITY
+</text>
+
+<text x="42" y="76"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="13"
+fill="#8b949e">
+LIVE PROJECT TELEMETRY
+</text>
+
+<line x1="42" y1="96" x2="958" y2="96"
+stroke="#30363d"/>
+
+<rect x="42" y="120" width="610" height="500"
+rx="10"
+fill="#161b22"
+stroke="#30363d"/>
+
+<text x="68" y="155"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="16"
+font-weight="700"
+fill="#f0f6fc">
+RECENT COMMITS
+</text>
+
+<circle cx="74" cy="190" r="5" fill="#3fb950"/>
+
+<text x="92" y="195"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="12"
+fill="#8b949e">
+2026-09-06 07:13 UTC
+</text>
+
+<text x="250" y="195"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="12"
+font-weight="700"
+fill="#58a6ff">
+Furruka
+</text>
+
+<text x="92" y="219"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="13"
+fill="#f0f6fc">
+Add recent activity section to README
+</text>
+
+<line x1="68" y1="240" x2="625" y2="240"
+stroke="#30363d"/>
+
+<circle cx="74" cy="248" r="5" fill="#3fb950"/>
+
+<text x="92" y="253"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="12"
+fill="#8b949e">
+2026-09-06 07:13 UTC
+</text>
+
+<text x="250" y="253"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="12"
+font-weight="700"
+fill="#58a6ff">
+Furruka
+</text>
+
+<text x="92" y="277"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="13"
+fill="#f0f6fc">
+Add GitHub Actions workflow for recent activity update
+</text>
+
+<line x1="68" y1="298" x2="625" y2="298"
+stroke="#30363d"/>
+
+<circle cx="74" cy="306" r="5" fill="#3fb950"/>
+
+<text x="92" y="311"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="12"
+fill="#8b949e">
+2026-09-06 07:12 UTC
+</text>
+
+<text x="250" y="311"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="12"
+font-weight="700"
+fill="#58a6ff">
+Furruka
+</text>
+
+<text x="92" y="335"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="13"
+fill="#f0f6fc">
+Add recent_activity.py to track GitHub activity
+</text>
+
+<line x1="68" y1="356" x2="625" y2="356"
+stroke="#30363d"/>
+
+<circle cx="74" cy="364" r="5" fill="#3fb950"/>
+
+<text x="92" y="369"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="12"
+fill="#8b949e">
+2026-09-06 07:10 UTC
+</text>
+
+<text x="250" y="369"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="12"
+font-weight="700"
+fill="#58a6ff">
+Furruka
+</text>
+
+<text x="92" y="393"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="13"
+fill="#f0f6fc">
+Remove contribution snake image from README
+</text>
+
+<line x1="68" y1="414" x2="625" y2="414"
+stroke="#30363d"/>
+
+<circle cx="74" cy="422" r="5" fill="#3fb950"/>
+
+<text x="92" y="427"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="12"
+fill="#8b949e">
+2026-09-06 07:08 UTC
+</text>
+
+<text x="250" y="427"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="12"
+font-weight="700"
+fill="#58a6ff">
+Furruka
+</text>
+
+<text x="92" y="451"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="13"
+fill="#f0f6fc">
+Add step to install Python dependencies
+</text>
+
+<line x1="68" y1="472" x2="625" y2="472"
+stroke="#30363d"/>
+
+<circle cx="74" cy="480" r="5" fill="#3fb950"/>
+
+<text x="92" y="485"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="12"
+fill="#8b949e">
+2026-09-06 07:04 UTC
+</text>
+
+<text x="250" y="485"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="12"
+font-weight="700"
+fill="#58a6ff">
+Furruka
+</text>
+
+<text x="92" y="509"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="13"
+fill="#f0f6fc">
+Add system activity section to README
+</text>
+
+<line x1="68" y1="530" x2="625" y2="530"
+stroke="#30363d"/>
+
+<circle cx="74" cy="538" r="5" fill="#3fb950"/>
+
+<text x="92" y="543"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="12"
+fill="#8b949e">
+2026-09-06 07:03 UTC
+</text>
+
+<text x="250" y="543"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="12"
+font-weight="700"
+fill="#58a6ff">
+Furruka
+</text>
+
+<text x="92" y="567"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="13"
+fill="#f0f6fc">
+Add activity tracking script for GitHub repositories
+</text>
+
+<line x1="68" y1="588" x2="625" y2="588"
+stroke="#30363d"/>
+
+<circle cx="74" cy="596" r="5" fill="#3fb950"/>
+
+<text x="92" y="601"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="12"
+fill="#8b949e">
+2026-09-06 07:02 UTC
+</text>
+
+<text x="250" y="601"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="12"
+font-weight="700"
+fill="#58a6ff">
+Furruka
+</text>
+
+<text x="92" y="625"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="13"
+fill="#f0f6fc">
+Create workflow for updating system activity
+</text>
+
+<line x1="68" y1="646" x2="625" y2="646"
+stroke="#30363d"/>
+
+<rect x="680" y="120" width="278" height="500"
+rx="10"
+fill="#161b22"
+stroke="#30363d"/>
+
+<text x="705" y="155"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="16"
+font-weight="700"
+fill="#f0f6fc">
+ACTIVE REPOSITORIES
+</text>
+
+<text x="706" y="200"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="13"
+fill="#8b949e">
+01
+</text>
+
+<text x="745" y="200"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="13"
+font-weight="700"
+fill="#f0f6fc">
+Furruka
+</text>
+
+<text x="915" y="200"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="13"
+text-anchor="end"
+fill="#58a6ff">
+10
+</text>
+
+<text x="706" y="255"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="13"
+fill="#8b949e">
+02
+</text>
+
+<text x="745" y="255"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="13"
+font-weight="700"
+fill="#f0f6fc">
+android_device_oplus_qqcandy_twrp
+</text>
+
+<text x="915" y="255"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="13"
+text-anchor="end"
+fill="#58a6ff">
+10
+</text>
+
+<text x="706" y="310"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="13"
+fill="#8b949e">
+03
+</text>
+
+<text x="745" y="310"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="13"
+font-weight="700"
+fill="#f0f6fc">
+Action-TWRP-Builder
+</text>
+
+<text x="915" y="310"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="13"
+text-anchor="end"
+fill="#58a6ff">
+5
+</text>
+
+<line x1="705" y1="510" x2="935" y2="510"
+stroke="#30363d"/>
+
+<text x="705" y="540"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#8b949e">
+REPOSITORIES
+</text>
+
+<text x="935" y="540"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+text-anchor="end"
+fill="#f0f6fc">
+3
+</text>
+
+<text x="705" y="570"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#8b949e">
+COMMITS INDEXED
+</text>
+
+<text x="935" y="570"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+text-anchor="end"
+fill="#f0f6fc">
+25
+</text>
+
+<text x="705" y="600"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+fill="#8b949e">
+UPDATED
+</text>
+
+<text x="935" y="600"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+text-anchor="end"
+fill="#f0f6fc">
+2026-09-06 07:15 UTC
+</text>
+
+</svg>
