@@ -223,11 +223,17 @@ Linux networking from packets to policy.
 <div align="center">
 
 <a href="https://github.com/Furruka">
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=Furruka&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=transparent">
+  <img
+    height="180"
+    src="./profile/stats.svg"
+    alt="GitHub Statistics">
 </a>
 
 <a href="https://github.com/Furruka">
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Furruka&layout=compact&langs_count=8&hide_border=true&theme=transparent">
+  <img
+    height="180"
+    src="./profile/top-langs.svg"
+    alt="Top Languages">
 </a>
 
 </div>
