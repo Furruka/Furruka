@@ -253,6 +253,19 @@ Linux networking from packets to policy.
 
 ---
 
+## `RECENT ACTIVITY`
+
+<div align="center">
+
+<img
+  src="./profile/recent-activity.svg"
+  alt="Recent Activity"
+  width="1000">
+
+</div>
+
+---
+
 ## `CONTRIBUTION MATRIX`
 
 <div align="center">
