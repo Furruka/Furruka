@@ -1,0 +1,616 @@
+<svg
+xmlns="http://www.w3.org/2000/svg"
+width="100%"
+height="937"
+viewBox="0 0 760 937"
+preserveAspectRatio="xMidYMid meet">
+
+<rect
+x="0"
+y="0"
+width="100%"
+height="100%"
+rx="12"
+fill="#0d1117"/>
+
+<text
+x="28"
+y="42"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="22"
+font-weight="700"
+fill="#f0f6fc">
+FURRUKA // DEVELOPER LOG
+</text>
+
+<text
+x="28"
+y="66"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#8b949e">
+AUTOMATED DEVELOPMENT HISTORY
+</text>
+
+<line
+x1="28"
+y1="84"
+x2="732"
+y2="84"
+stroke="#30363d"/>
+
+<rect
+x="28"
+y="106"
+width="704"
+height="776"
+rx="10"
+fill="#161b22"
+stroke="#30363d"/>
+
+<text
+x="50"
+y="140"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="14"
+font-weight="700"
+fill="#f0f6fc">
+RECENT DEVELOPMENT
+</text>
+
+<circle
+cx="55"
+cy="174"
+r="4"
+fill="#3fb950"/>
+
+<text
+x="70"
+y="178"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+fill="#8b949e">
+2026-09-05
+</text>
+
+<text
+x="162"
+y="178"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#58a6ff">
+iPhoneMirror
+</text>
+
+<text
+x="70"
+y="200"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#8b949e">
+[GENERAL]
+</text>
+
+<text
+x="162"
+y="200"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#f0f6fc">
+Survey the frontend port before starting it
+</text>
+
+<line
+x1="50"
+y1="218"
+x2="710"
+y2="218"
+stroke="#30363d"/>
+
+<circle
+cx="55"
+cy="236"
+r="4"
+fill="#3fb950"/>
+
+<text
+x="70"
+y="240"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+fill="#8b949e">
+2026-09-05
+</text>
+
+<text
+x="162"
+y="240"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#58a6ff">
+iPhoneMirror
+</text>
+
+<text
+x="70"
+y="262"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#8b949e">
+[GENERAL]
+</text>
+
+<text
+x="162"
+y="262"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#f0f6fc">
+Turn reverse control off by default while its freeze is
+</text>
+
+<text
+x="162"
+y="280"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#f0f6fc">
+unresolved
+</text>
+
+<line
+x1="50"
+y1="298"
+x2="710"
+y2="298"
+stroke="#30363d"/>
+
+<circle
+cx="55"
+cy="316"
+r="4"
+fill="#3fb950"/>
+
+<text
+x="70"
+y="320"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+fill="#8b949e">
+2026-09-05
+</text>
+
+<text
+x="162"
+y="320"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#58a6ff">
+iPhoneMirror
+</text>
+
+<text
+x="70"
+y="342"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#8b949e">
+[GENERAL]
+</text>
+
+<text
+x="162"
+y="342"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#f0f6fc">
+Keep D-Bus off the UI thread so the picture does not
+</text>
+
+<text
+x="162"
+y="360"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#f0f6fc">
+freeze
+</text>
+
+<line
+x1="50"
+y1="378"
+x2="710"
+y2="378"
+stroke="#30363d"/>
+
+<circle
+cx="55"
+cy="396"
+r="4"
+fill="#3fb950"/>
+
+<text
+x="70"
+y="400"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+fill="#8b949e">
+2026-09-05
+</text>
+
+<text
+x="162"
+y="400"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#58a6ff">
+iPhoneMirror
+</text>
+
+<text
+x="70"
+y="422"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#8b949e">
+[ANDROID]
+</text>
+
+<text
+x="162"
+y="422"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#f0f6fc">
+Drive the iPad from the preview window&apos;s mouse and
+</text>
+
+<text
+x="162"
+y="440"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#f0f6fc">
+keyboard
+</text>
+
+<line
+x1="50"
+y1="458"
+x2="710"
+y2="458"
+stroke="#30363d"/>
+
+<circle
+cx="55"
+cy="476"
+r="4"
+fill="#3fb950"/>
+
+<text
+x="70"
+y="480"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+fill="#8b949e">
+2026-09-05
+</text>
+
+<text
+x="162"
+y="480"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#58a6ff">
+iPhoneMirror
+</text>
+
+<text
+x="70"
+y="502"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#8b949e">
+[GENERAL]
+</text>
+
+<text
+x="162"
+y="502"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#f0f6fc">
+Move the pointer on the iPad
+</text>
+
+<line
+x1="50"
+y1="520"
+x2="710"
+y2="520"
+stroke="#30363d"/>
+
+<circle
+cx="55"
+cy="538"
+r="4"
+fill="#3fb950"/>
+
+<text
+x="70"
+y="542"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+fill="#8b949e">
+2026-09-05
+</text>
+
+<text
+x="162"
+y="542"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#58a6ff">
+iPhoneMirror
+</text>
+
+<text
+x="70"
+y="564"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#8b949e">
+[GENERAL]
+</text>
+
+<text
+x="162"
+y="564"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#f0f6fc">
+Send HID reports to the paired iPad
+</text>
+
+<line
+x1="50"
+y1="582"
+x2="710"
+y2="582"
+stroke="#30363d"/>
+
+<circle
+cx="55"
+cy="600"
+r="4"
+fill="#3fb950"/>
+
+<text
+x="70"
+y="604"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+fill="#8b949e">
+2026-09-05
+</text>
+
+<text
+x="162"
+y="604"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#58a6ff">
+iPhoneMirror
+</text>
+
+<text
+x="70"
+y="626"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#8b949e">
+[DESKTOP]
+</text>
+
+<text
+x="162"
+y="626"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#f0f6fc">
+Publish the desktop as a BLE HID peripheral through BlueZ
+</text>
+
+<line
+x1="50"
+y1="644"
+x2="710"
+y2="644"
+stroke="#30363d"/>
+
+<circle
+cx="55"
+cy="662"
+r="4"
+fill="#3fb950"/>
+
+<text
+x="70"
+y="666"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+fill="#8b949e">
+2026-09-05
+</text>
+
+<text
+x="162"
+y="666"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#58a6ff">
+iPhoneMirror
+</text>
+
+<text
+x="70"
+y="688"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#8b949e">
+[GENERAL]
+</text>
+
+<text
+x="162"
+y="688"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#f0f6fc">
+Prove reverse control is feasible through BlueZ HOGP
+</text>
+
+<line
+x1="50"
+y1="706"
+x2="710"
+y2="706"
+stroke="#30363d"/>
+
+<circle
+cx="55"
+cy="724"
+r="4"
+fill="#3fb950"/>
+
+<text
+x="70"
+y="728"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+fill="#8b949e">
+2026-09-05
+</text>
+
+<text
+x="162"
+y="728"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#58a6ff">
+iPhoneMirror
+</text>
+
+<text
+x="70"
+y="750"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#8b949e">
+[GENERAL]
+</text>
+
+<text
+x="162"
+y="750"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#f0f6fc">
+Report the usbmuxd requirement in the environment
+</text>
+
+<text
+x="162"
+y="768"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#f0f6fc">
+diagnostic
+</text>
+
+<line
+x1="50"
+y1="786"
+x2="710"
+y2="786"
+stroke="#30363d"/>
+
+<circle
+cx="55"
+cy="804"
+r="4"
+fill="#3fb950"/>
+
+<text
+x="70"
+y="808"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+fill="#8b949e">
+2026-09-05
+</text>
+
+<text
+x="162"
+y="808"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#58a6ff">
+iPhoneMirror
+</text>
+
+<text
+x="70"
+y="830"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#8b949e">
+[DESKTOP]
+</text>
+
+<text
+x="162"
+y="830"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="11"
+fill="#f0f6fc">
+Show the live iPad screen in the Avalonia window
+</text>
+
+<line
+x1="50"
+y1="848"
+x2="710"
+y2="848"
+stroke="#30363d"/>
+
+<text
+x="50"
+y="914"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="9"
+fill="#8b949e">
+UPDATED 2026-09-06 08:09 UTC · GENERATED BY GITHUB ACTIONS
+</text>
+
+</svg>
