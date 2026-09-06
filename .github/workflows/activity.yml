@@ -11,10 +11,12 @@ permissions:
 jobs:
   activity:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+    
+      - name: Install dependencies
+        run: python3 -m pip install requests
 
       - name: Generate activity matrix
         env:
