@@ -382,12 +382,6 @@ If something here helps you, feel free to explore the repositories.
 
 `BUILD · BREAK · TRACE · FIX · REPEAT`
 
-<br>
-
-<img src="https://raw.githubusercontent.com/Furruka/Furruka/output/github-contribution-grid-snake.svg" alt="Contribution Snake">
-
-<br><br>
-
 <sub>Powered by curiosity, Linux and an unreasonable number of logs.</sub>
 
 </div>
