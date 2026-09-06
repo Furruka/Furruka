@@ -1,12 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg"
+<svg
+xmlns="http://www.w3.org/2000/svg"
 width="100%"
 height="700"
 viewBox="0 0 760 700"
 preserveAspectRatio="xMidYMid meet">
 
-<rect width="100%" height="100%" rx="12" fill="#0d1117"/>
+<rect
+x="0"
+y="0"
+width="100%"
+height="100%"
+rx="12"
+fill="#0d1117"/>
 
-<text x="28" y="42"
+<!-- Header -->
+
+<text
+x="28"
+y="42"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="22"
 font-weight="700"
@@ -14,22 +25,37 @@ fill="#f0f6fc">
 FURRUKA // RECENT ACTIVITY
 </text>
 
-<text x="28" y="66"
+<text
+x="28"
+y="66"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#8b949e">
 LIVE PROJECT TELEMETRY
 </text>
 
-<line x1="28" y1="84" x2="732" y2="84"
+<line
+x1="28"
+y1="84"
+x2="732"
+y2="84"
 stroke="#30363d"/>
 
-<rect x="28" y="106" width="462" height="510"
+
+<!-- Recent commits panel -->
+
+<rect
+x="28"
+y="106"
+width="462"
+height="510"
 rx="10"
 fill="#161b22"
 stroke="#30363d"/>
 
-<text x="50" y="138"
+<text
+x="50"
+y="138"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="14"
 font-weight="700"
@@ -37,353 +63,478 @@ fill="#f0f6fc">
 RECENT COMMITS
 </text>
 
-<circle cx="56" cy="168" r="4" fill="#3fb950"/>
+<circle
+cx="56"
+cy="168"
+r="4"
+fill="#3fb950"/>
 
-<text x="70" y="172"
+<text
+x="70"
+y="172"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
-2026-09-06 07:18
+2026-07-23 12:10 UTC
 </text>
 
-<text x="218" y="172"
+<text
+x="222"
+y="172"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
 fill="#58a6ff">
-Furruka
+android_device...
 </text>
 
-<text x="70" y="193"
+<text
+x="70"
+y="193"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
-Change image width to 100% in README
+qqcandy: fix maintainer avatar not displaying
 </text>
 
-<line x1="50" y1="212" x2="468" y2="212"
+<line
+x1="50"
+y1="212"
+x2="468"
+y2="212"
 stroke="#30363d"/>
 
-<circle cx="56" cy="225" r="4" fill="#3fb950"/>
+<circle
+cx="56"
+cy="225"
+r="4"
+fill="#3fb950"/>
 
-<text x="70" y="229"
+<text
+x="70"
+y="229"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
-2026-09-06 07:17
+2026-07-17 15:28 UTC
 </text>
 
-<text x="218" y="229"
+<text
+x="222"
+y="229"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
 fill="#58a6ff">
-Furruka
+android_device...
 </text>
 
-<text x="70" y="250"
+<text
+x="70"
+y="250"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
-Adjust SVG dimensions and font sizes in rece...
+qqcandy: drop AromaFM from OrangeFox zip
 </text>
 
-<line x1="50" y1="269" x2="468" y2="269"
+<line
+x1="50"
+y1="269"
+x2="468"
+y2="269"
 stroke="#30363d"/>
 
-<circle cx="56" cy="282" r="4" fill="#3fb950"/>
+<circle
+cx="56"
+cy="282"
+r="4"
+fill="#3fb950"/>
 
-<text x="70" y="286"
+<text
+x="70"
+y="286"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
-2026-09-06 07:13
+2026-07-17 15:27 UTC
 </text>
 
-<text x="218" y="286"
+<text
+x="222"
+y="286"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
 fill="#58a6ff">
-Furruka
+android_device...
 </text>
 
-<text x="70" y="307"
+<text
+x="70"
+y="307"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
-Add recent activity section to README
+qqcandy: fix OrangeFox vendor_boot installer
 </text>
 
-<line x1="50" y1="326" x2="468" y2="326"
+<line
+x1="50"
+y1="326"
+x2="468"
+y2="326"
 stroke="#30363d"/>
 
-<circle cx="56" cy="339" r="4" fill="#3fb950"/>
+<circle
+cx="56"
+cy="339"
+r="4"
+fill="#3fb950"/>
 
-<text x="70" y="343"
+<text
+x="70"
+y="343"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
-2026-09-06 07:13
+2026-07-17 15:07 UTC
 </text>
 
-<text x="218" y="343"
+<text
+x="222"
+y="343"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
 fill="#58a6ff">
-Furruka
+android_device...
 </text>
 
-<text x="70" y="364"
+<text
+x="70"
+y="364"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
-Add GitHub Actions workflow for recent activ...
+qqcandy: fix recovery decrypt and MTP startup
 </text>
 
-<line x1="50" y1="383" x2="468" y2="383"
+<line
+x1="50"
+y1="383"
+x2="468"
+y2="383"
 stroke="#30363d"/>
 
-<circle cx="56" cy="396" r="4" fill="#3fb950"/>
+<circle
+cx="56"
+cy="396"
+r="4"
+fill="#3fb950"/>
 
-<text x="70" y="400"
+<text
+x="70"
+y="400"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
-2026-09-06 07:12
+2026-05-15 04:25 UTC
 </text>
 
-<text x="218" y="400"
+<text
+x="222"
+y="400"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
 fill="#58a6ff">
-Furruka
+android_device...
 </text>
 
-<text x="70" y="421"
+<text
+x="70"
+y="421"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
-Add recent_activity.py to track GitHub activity
+Add files via upload
 </text>
 
-<line x1="50" y1="440" x2="468" y2="440"
+<line
+x1="50"
+y1="440"
+x2="468"
+y2="440"
 stroke="#30363d"/>
 
-<circle cx="56" cy="453" r="4" fill="#3fb950"/>
+<circle
+cx="56"
+cy="453"
+r="4"
+fill="#3fb950"/>
 
-<text x="70" y="457"
+<text
+x="70"
+y="457"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
-2026-09-06 07:10
+2026-05-15 04:23 UTC
 </text>
 
-<text x="218" y="457"
+<text
+x="222"
+y="457"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
 fill="#58a6ff">
-Furruka
+android_device...
 </text>
 
-<text x="70" y="478"
+<text
+x="70"
+y="478"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
-Remove contribution snake image from README
+Add maintainer avatar path to OrangeFox.mk
 </text>
 
-<line x1="50" y1="497" x2="468" y2="497"
+<line
+x1="50"
+y1="497"
+x2="468"
+y2="497"
 stroke="#30363d"/>
 
-<circle cx="56" cy="510" r="4" fill="#3fb950"/>
+<circle
+cx="56"
+cy="510"
+r="4"
+fill="#3fb950"/>
 
-<text x="70" y="514"
+<text
+x="70"
+y="514"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
-2026-09-06 07:08
+2026-04-21 00:30 UTC
 </text>
 
-<text x="218" y="514"
+<text
+x="222"
+y="514"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
 fill="#58a6ff">
-Furruka
+android_device...
 </text>
 
-<text x="70" y="535"
+<text
+x="70"
+y="535"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
-Add step to install Python dependencies
+Update Sideload status to completed in README_CN
 </text>
 
-<line x1="50" y1="554" x2="468" y2="554"
+<line
+x1="50"
+y1="554"
+x2="468"
+y2="554"
 stroke="#30363d"/>
 
-<circle cx="56" cy="567" r="4" fill="#3fb950"/>
+<circle
+cx="56"
+cy="567"
+r="4"
+fill="#3fb950"/>
 
-<text x="70" y="571"
+<text
+x="70"
+y="571"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
-2026-09-06 07:04
+2026-04-21 00:29 UTC
 </text>
 
-<text x="218" y="571"
+<text
+x="222"
+y="571"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
 fill="#58a6ff">
-Furruka
+android_device...
 </text>
 
-<text x="70" y="592"
+<text
+x="70"
+y="592"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
-Add system activity section to README
+Mark &apos;Vibrator&apos; as completed in README
 </text>
 
-<line x1="50" y1="611" x2="468" y2="611"
+<line
+x1="50"
+y1="611"
+x2="468"
+y2="611"
 stroke="#30363d"/>
 
-<rect x="506" y="106" width="226" height="510"
+<rect
+x="506"
+y="106"
+width="226"
+height="510"
 rx="10"
 fill="#161b22"
 stroke="#30363d"/>
 
-<text x="528" y="138"
+<text
+x="528"
+y="138"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="14"
 font-weight="700"
 fill="#f0f6fc">
-ACTIVE REPOS
+ACTIVE REPOSITORIES
 </text>
 
-<text x="528" y="180"
+<text
+x="528"
+y="180"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
-font-size="11"
+font-size="10"
 fill="#8b949e">
 01
 </text>
 
-<text x="557" y="180"
+<text
+x="555"
+y="180"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
-font-size="11"
+font-size="10"
 font-weight="700"
 fill="#f0f6fc">
-Furruka
+android_device...
 </text>
 
-<text x="708" y="180"
+<text
+x="710"
+y="180"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
-font-size="11"
+font-size="10"
 text-anchor="end"
 fill="#58a6ff">
 10
 </text>
 
-<text x="528" y="226"
+<text
+x="528"
+y="226"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
-font-size="11"
+font-size="10"
 fill="#8b949e">
 02
 </text>
 
-<text x="557" y="226"
+<text
+x="555"
+y="226"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
-font-size="11"
+font-size="10"
 font-weight="700"
 fill="#f0f6fc">
-android_device_...
+Action-TWRP-Bu...
 </text>
 
-<text x="708" y="226"
+<text
+x="710"
+y="226"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
-font-size="11"
-text-anchor="end"
-fill="#58a6ff">
-10
-</text>
-
-<text x="528" y="272"
-font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
-font-size="11"
-fill="#8b949e">
-03
-</text>
-
-<text x="557" y="272"
-font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
-font-size="11"
-font-weight="700"
-fill="#f0f6fc">
-Action-TWRP-Bui...
-</text>
-
-<text x="708" y="272"
-font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
-font-size="11"
+font-size="10"
 text-anchor="end"
 fill="#58a6ff">
 5
 </text>
 
-<line x1="528" y1="455" x2="710" y2="455"
+<line
+x1="528"
+y1="455"
+x2="710"
+y2="455"
 stroke="#30363d"/>
 
-<text x="528" y="485"
+<text
+x="528"
+y="485"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="9"
 fill="#8b949e">
 REPOSITORIES
 </text>
 
-<text x="710" y="485"
+<text
+x="710"
+y="485"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="9"
 text-anchor="end"
 fill="#f0f6fc">
-3
+2
 </text>
 
-<text x="528" y="515"
+<text
+x="528"
+y="515"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="9"
 fill="#8b949e">
 COMMITS INDEXED
 </text>
 
-<text x="710" y="515"
+<text
+x="710"
+y="515"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="9"
 text-anchor="end"
 fill="#f0f6fc">
-25
+15
 </text>
 
-<text x="528" y="545"
+<text
+x="528"
+y="545"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="9"
 fill="#8b949e">
 UPDATED
 </text>
 
-<text x="710" y="545"
+<text
+x="710"
+y="545"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="9"
 text-anchor="end"
 fill="#f0f6fc">
-2026-09-06 07:18 UTC
+2026-09-06 07:26 UTC
 </text>
 
-<text x="28" y="650"
+<text
+x="28"
+y="650"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
