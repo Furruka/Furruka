@@ -1,0 +1,51 @@
+name: Update Year In Code
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "57 0 1 * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-update
+  cancel-in-progress: false
+
+jobs:
+  year-in-code:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Install dependencies
+        run: python3 -m pip install requests
+
+      - name: Generate yearly report
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: Furruka
+        run: |
+          python3 .github/scripts/year_in_code.py
+
+      - name: Commit generated SVG
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add profile/year-in-code.svg
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "chore: update year in code"
+
+          git pull --rebase origin main
+
+          git push origin HEAD:main
