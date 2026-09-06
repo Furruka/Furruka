@@ -1,0 +1,146 @@
+name: Update Furruka Profile
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 0 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-update
+  cancel-in-progress: false
+
+jobs:
+  update-profile:
+    runs-on: ubuntu-latest
+
+    steps:
+      # ======================================================
+      # Checkout repository
+      # ======================================================
+
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      # ======================================================
+      # Install Python dependencies
+      # ======================================================
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install requests
+
+      # ======================================================
+      # Generate GitHub statistics
+      # ======================================================
+
+      - name: Generate GitHub Stats
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=Furruka&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=transparent
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ======================================================
+      # Generate Top Languages
+      # ======================================================
+
+      - name: Generate Top Languages
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=Furruka&layout=compact&langs_count=8&hide_border=true&theme=transparent
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ======================================================
+      # Generate System Activity
+      # ======================================================
+
+      - name: Generate System Activity
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: Furruka
+        run: |
+          python3 .github/scripts/activity.py
+
+      # ======================================================
+      # Generate Recent Activity
+      # ======================================================
+
+      - name: Generate Recent Activity
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: Furruka
+        run: |
+          python3 .github/scripts/recent_activity.py
+
+      # ======================================================
+      # Generate Developer Log
+      # ======================================================
+
+      - name: Generate Developer Log
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: Furruka
+        run: |
+          python3 .github/scripts/developer_log.py
+
+      # ======================================================
+      # Generate Currently Building
+      # ======================================================
+
+      - name: Generate Currently Building
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: Furruka
+        run: |
+          python3 .github/scripts/currently_building.py
+
+      # ======================================================
+      # Generate Year In Code
+      # ======================================================
+
+      - name: Generate Year In Code
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: Furruka
+        run: |
+          python3 .github/scripts/year_in_code.py
+
+      # ======================================================
+      # Show generated files
+      # ======================================================
+
+      - name: Verify generated profile
+        run: |
+          echo "Generated profile files:"
+          find profile -maxdepth 1 -type f -printf '%f\n' | sort
+
+      # ======================================================
+      # Commit everything at once
+      # ======================================================
+
+      - name: Commit generated profile
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add profile/
+
+          if git diff --cached --quiet; then
+            echo "No profile changes detected."
+            exit 0
+          fi
+
+          git commit -m "chore: update profile telemetry"
+
+          git pull --rebase origin main
+
+          git push origin HEAD:main
