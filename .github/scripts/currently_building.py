@@ -21,23 +21,27 @@ HEADERS = {
     "X-GitHub-Api-Version": "2022-11-28",
 }
 
+# Never include the Profile README repository.
 PROFILE_REPO = USER.lower()
 
+# GitHub API pagination.
 PER_PAGE = 100
 
+# Maximum repositories to inspect.
 MAX_REPOSITORIES = 50
 
+# Number of commits requested from each repository.
 COMMITS_PER_REPOSITORY = 100
 
-# Only consider activity from this period.
+# Activity window.
 ACTIVITY_DAYS = 60
 
-# Number of projects to display.
+# Number of projects displayed.
 PROJECT_COUNT = 4
 
 
 # ============================================================
-# HTTP session
+# HTTP Session
 # ============================================================
 
 session = requests.Session()
@@ -45,6 +49,10 @@ session.headers.update(HEADERS)
 
 
 def api_get(url: str, params=None):
+    """
+    Perform a GET request against GitHub's REST API.
+    """
+
     response = session.get(
         url,
         params=params,
@@ -61,6 +69,10 @@ def api_get(url: str, params=None):
 # ============================================================
 
 def escape_xml(text: str) -> str:
+    """
+    Escape text before inserting it into SVG.
+    """
+
     return (
         str(text)
         .replace("&", "&amp;")
@@ -71,7 +83,12 @@ def escape_xml(text: str) -> str:
     )
 
 
-def shorten(text: str, maximum: int):
+def shorten(text: str, maximum: int) -> str:
+    """
+    Shorten a string while keeping the result
+    within the requested maximum length.
+    """
+
     if len(text) <= maximum:
         return text
 
@@ -83,6 +100,12 @@ def shorten(text: str, maximum: int):
 # ============================================================
 
 def get_repositories():
+    """
+    Retrieve all repositories owned by the user.
+
+    Forks are intentionally included because a fork can still
+    be an actively maintained project.
+    """
 
     repositories = []
 
@@ -116,10 +139,11 @@ def get_repositories():
             "",
         )
 
-        # Never include profile repository.
+        # Exclude Profile README repository.
         if name.lower() == PROFILE_REPO:
             continue
 
+        # Disabled repositories cannot be queried normally.
         if repo.get("disabled"):
             continue
 
@@ -133,6 +157,9 @@ def get_repositories():
 # ============================================================
 
 def get_commits(repo):
+    """
+    Retrieve recent commits authored by the user.
+    """
 
     owner = repo["owner"]["login"]
     name = repo["name"]
@@ -150,7 +177,9 @@ def get_commits(repo):
     except requests.HTTPError as exc:
 
         print(
-            f"Skipping {owner}/{name}: {exc}"
+            f"Skipping "
+            f"{owner}/{name}: "
+            f"{exc}"
         )
 
         return []
@@ -267,11 +296,21 @@ CATEGORY_RULES = {
 }
 
 
-def detect_categories(repository, commits):
+def detect_categories(
+    repository: str,
+    commits: list,
+):
+    """
+    Calculate category scores based on repository name
+    and recent commit messages.
+    """
 
-    text_parts = [repository]
+    text_parts = [
+        repository
+    ]
 
     for commit in commits:
+
         text_parts.append(
             commit.get(
                 "message",
@@ -301,6 +340,11 @@ def detect_categories(repository, commits):
 
 repositories = get_repositories()
 
+print(
+    f"Repositories discovered: "
+    f"{len(repositories)}"
+)
+
 now = datetime.now(
     timezone.utc
 )
@@ -314,18 +358,19 @@ activity_since = (
 
 project_scores = {}
 
-all_recent_commits = []
-
 
 for repo in repositories[:MAX_REPOSITORIES]:
 
     repo_name = repo["name"]
 
     print(
-        f"Scanning {repo['full_name']}"
+        f"Scanning "
+        f"{repo['full_name']}"
     )
 
-    commits = get_commits(repo)
+    commits = get_commits(
+        repo
+    )
 
     recent_commits = []
 
@@ -361,6 +406,7 @@ for repo in repositories[:MAX_REPOSITORIES]:
 
             continue
 
+        # Ignore old activity.
         if commit_date < activity_since:
             continue
 
@@ -374,15 +420,10 @@ for repo in repositories[:MAX_REPOSITORIES]:
             .strip()
         )
 
-        recent_commits.append(
-            {
-                "date": commit_date,
-                "message": message,
-                "repo": repo_name,
-            }
-        )
+        if not message:
+            message = "(no commit message)"
 
-        all_recent_commits.append(
+        recent_commits.append(
             {
                 "date": commit_date,
                 "message": message,
@@ -402,18 +443,25 @@ for repo in repositories[:MAX_REPOSITORIES]:
         recent_commits
     )
 
-    # Activity score:
+    # --------------------------------------------------------
+    # Activity score
+    # --------------------------------------------------------
     #
-    # commit count has the largest effect,
-    # categories add contextual weight,
-    # recency provides a small bonus.
+    # More commits = stronger activity.
+    # Category matches add a little contextual weight.
+    # More recent commits get a small bonus.
     #
-    # This is deliberately simple and explainable.
-    score = commit_count * 10
+    # This is deliberately simple and deterministic.
+    # --------------------------------------------------------
 
-    score += sum(
-        categories.values()
-    ) * 3
+    score = (
+        commit_count * 10
+    )
+
+    score += (
+        sum(categories.values())
+        * 3
+    )
 
     newest = max(
         item["date"]
@@ -424,12 +472,12 @@ for repo in repositories[:MAX_REPOSITORIES]:
         0,
         (
             now - newest
-        ).days
+        ).days,
     )
 
     score += max(
         0,
-        ACTIVITY_DAYS - age_days
+        ACTIVITY_DAYS - age_days,
     )
 
     project_scores[
@@ -462,7 +510,7 @@ ranked_projects = ranked_projects[
 
 
 # ============================================================
-# SVG helpers
+# SVG configuration
 # ============================================================
 
 WIDTH = 760
@@ -482,40 +530,46 @@ FONT = (
 )
 
 
+# ============================================================
+# Dynamic project height
+# ============================================================
+
 def project_height(project):
+    """
+    Calculate the amount of vertical space required
+    by one project.
+    """
 
     categories = project[
         "categories"
     ]
 
-    # Maximum of three category labels.
     category_count = min(
         3,
         len(categories),
     )
 
+    # Compact layout.
     return (
-        104
-        + category_count * 19
+        92
+        + category_count * 14
     )
 
 
 # ============================================================
-# Dynamic SVG height
+# Dynamic overall height
 # ============================================================
 
 HEADER_HEIGHT = 106
 
 PROJECT_START_Y = 178
 
-BOTTOM_PADDING = 60
+BOTTOM_PADDING = 28
 
 if ranked_projects:
 
     projects_height = sum(
-        project_height(
-            data
-        )
+        project_height(data)
         for _, data
         in ranked_projects
     )
@@ -533,6 +587,7 @@ PANEL_HEIGHT = (
     + projects_height
     + BOTTOM_PADDING
 )
+
 
 FOOTER_HEIGHT = 55
 
@@ -568,6 +623,9 @@ height="100%"
 rx="12"
 fill="{BACKGROUND}"/>
 
+
+<!-- HEADER -->
+
 <text
 x="28"
 y="42"
@@ -584,7 +642,7 @@ y="66"
 font-family="{FONT}"
 font-size="11"
 fill="{MUTED}">
-ACTIVE PROJECTS · LAST {ACTIVITY_DAYS} DAYS
+PROJECT ACTIVITY · LAST {ACTIVITY_DAYS} DAYS
 </text>
 
 <line
@@ -593,6 +651,9 @@ y1="84"
 x2="732"
 y2="84"
 stroke="{BORDER}"/>
+
+
+<!-- MAIN PANEL -->
 
 <rect
 x="28"
@@ -654,7 +715,7 @@ if ranked_projects:
 
         display_repo = shorten(
             repo_name,
-            30,
+            32,
         )
 
         svg += f'''
@@ -695,7 +756,10 @@ fill="{MUTED}">
 </text>
 '''
 
-        # Categories.
+        # ----------------------------------------------------
+        # Categories
+        # ----------------------------------------------------
+
         category_y = y + 22
 
         if category_names:
@@ -704,6 +768,11 @@ fill="{MUTED}">
                 " · ".join(
                     category_names
                 )
+            )
+
+            category_text = shorten(
+                category_text,
+                42,
             )
 
             svg += f'''
@@ -732,6 +801,10 @@ GENERAL
 </text>
 '''
 
+        # ----------------------------------------------------
+        # Activity date
+        # ----------------------------------------------------
+
         svg += f'''
 <text
 x="104"
@@ -741,19 +814,34 @@ font-size="10"
 fill="{TEXT}">
 active through {date_text}
 </text>
+'''
 
+        # ----------------------------------------------------
+        # Separator
+        # ----------------------------------------------------
+
+        separator_y = (
+            category_y + 39
+        )
+
+        svg += f'''
 <line
 x1="50"
-y1="{category_y + 39}"
+y1="{separator_y}"
 x2="710"
-y2="{category_y + 39}"
+y2="{separator_y}"
 stroke="{BORDER}"/>
 '''
 
+        # Move down dynamically.
         y += project_height(
             data
         )
 
+
+# ============================================================
+# Empty state
+# ============================================================
 
 else:
 
@@ -828,6 +916,11 @@ print(
 )
 
 print(
+    f"Repositories scanned    : "
+    f"{len(repositories[:MAX_REPOSITORIES])}"
+)
+
+print(
     f"Activity window          : "
     f"{ACTIVITY_DAYS} days"
 )
@@ -853,6 +946,9 @@ for index, (
         ].most_common(3)
     )
 
+    if not categories:
+        categories = "GENERAL"
+
     print(
         f"{index}. "
         f"{repo_name} "
@@ -861,7 +957,12 @@ for index, (
     )
 
 print(
-    f"Output                   : "
+    f"SVG height              : "
+    f"{HEIGHT}px"
+)
+
+print(
+    f"Output                  : "
     f"{output}"
 )
 
