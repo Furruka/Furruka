@@ -240,6 +240,19 @@ Linux networking from packets to policy.
 
 ---
 
+## `SYSTEM ACTIVITY`
+
+<div align="center">
+
+<img
+  src="./profile/activity.svg"
+  alt="Furruka System Activity"
+  width="900">
+
+</div>
+
+---
+
 ## `CONTRIBUTION MATRIX`
 
 <div align="center">
