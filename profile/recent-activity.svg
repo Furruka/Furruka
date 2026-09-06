@@ -13,7 +13,8 @@ height="100%"
 rx="12"
 fill="#0d1117"/>
 
-<!-- Header -->
+
+<!-- HEADER -->
 
 <text
 x="28"
@@ -42,7 +43,7 @@ y2="84"
 stroke="#30363d"/>
 
 
-<!-- Recent commits panel -->
+<!-- RECENT COMMITS -->
 
 <rect
 x="28"
@@ -75,7 +76,7 @@ y="172"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
-2026-07-23 12:10 UTC
+2026-09-05 14:48 UTC
 </text>
 
 <text
@@ -85,7 +86,7 @@ font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
 fill="#58a6ff">
-android_device...
+iPhoneMirror
 </text>
 
 <text
@@ -94,7 +95,7 @@ y="193"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
-qqcandy: fix maintainer avatar not displaying
+Survey the frontend port before starting it
 </text>
 
 <line
@@ -116,7 +117,7 @@ y="229"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
-2026-07-17 15:28 UTC
+2026-09-05 14:40 UTC
 </text>
 
 <text
@@ -126,7 +127,7 @@ font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
 fill="#58a6ff">
-android_device...
+iPhoneMirror
 </text>
 
 <text
@@ -135,7 +136,7 @@ y="250"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
-qqcandy: drop AromaFM from OrangeFox zip
+Turn reverse control off by default while its ...
 </text>
 
 <line
@@ -157,7 +158,7 @@ y="286"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
-2026-07-17 15:27 UTC
+2026-09-05 14:35 UTC
 </text>
 
 <text
@@ -167,7 +168,7 @@ font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
 fill="#58a6ff">
-android_device...
+iPhoneMirror
 </text>
 
 <text
@@ -176,7 +177,7 @@ y="307"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
-qqcandy: fix OrangeFox vendor_boot installer
+Keep D-Bus off the UI thread so the picture do...
 </text>
 
 <line
@@ -198,7 +199,7 @@ y="343"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
-2026-07-17 15:07 UTC
+2026-09-05 14:27 UTC
 </text>
 
 <text
@@ -208,7 +209,7 @@ font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
 fill="#58a6ff">
-android_device...
+iPhoneMirror
 </text>
 
 <text
@@ -217,7 +218,7 @@ y="364"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
-qqcandy: fix recovery decrypt and MTP startup
+Drive the iPad from the preview window&apos;s mouse...
 </text>
 
 <line
@@ -239,7 +240,7 @@ y="400"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
-2026-05-15 04:25 UTC
+2026-09-05 14:16 UTC
 </text>
 
 <text
@@ -249,7 +250,7 @@ font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
 fill="#58a6ff">
-android_device...
+iPhoneMirror
 </text>
 
 <text
@@ -258,7 +259,7 @@ y="421"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
-Add files via upload
+Move the pointer on the iPad
 </text>
 
 <line
@@ -280,7 +281,7 @@ y="457"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
-2026-05-15 04:23 UTC
+2026-09-05 14:02 UTC
 </text>
 
 <text
@@ -290,7 +291,7 @@ font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
 fill="#58a6ff">
-android_device...
+iPhoneMirror
 </text>
 
 <text
@@ -299,7 +300,7 @@ y="478"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
-Add maintainer avatar path to OrangeFox.mk
+Send HID reports to the paired iPad
 </text>
 
 <line
@@ -321,7 +322,7 @@ y="514"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
-2026-04-21 00:30 UTC
+2026-09-05 13:38 UTC
 </text>
 
 <text
@@ -331,7 +332,7 @@ font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
 fill="#58a6ff">
-android_device...
+iPhoneMirror
 </text>
 
 <text
@@ -340,7 +341,7 @@ y="535"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
-Update Sideload status to completed in README_CN
+Publish the desktop as a BLE HID peripheral th...
 </text>
 
 <line
@@ -362,7 +363,7 @@ y="571"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 fill="#8b949e">
-2026-04-21 00:29 UTC
+2026-09-05 13:16 UTC
 </text>
 
 <text
@@ -372,7 +373,7 @@ font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
 fill="#58a6ff">
-android_device...
+iPhoneMirror
 </text>
 
 <text
@@ -381,7 +382,7 @@ y="592"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="11"
 fill="#f0f6fc">
-Mark &apos;Vibrator&apos; as completed in README
+Prove reverse control is feasible through Blue...
 </text>
 
 <line
@@ -426,7 +427,7 @@ font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
 fill="#f0f6fc">
-android_device...
+iPhoneMirror
 </text>
 
 <text
@@ -436,7 +437,7 @@ font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 text-anchor="end"
 fill="#58a6ff">
-10
+49
 </text>
 
 <text
@@ -455,7 +456,7 @@ font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 font-weight="700"
 fill="#f0f6fc">
-Action-TWRP-Bu...
+android_device...
 </text>
 
 <text
@@ -465,7 +466,94 @@ font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="10"
 text-anchor="end"
 fill="#58a6ff">
+33
+</text>
+
+<text
+x="528"
+y="272"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+fill="#8b949e">
+03
+</text>
+
+<text
+x="555"
+y="272"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#f0f6fc">
+Action-OFRP-Bu...
+</text>
+
+<text
+x="710"
+y="272"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+text-anchor="end"
+fill="#58a6ff">
+27
+</text>
+
+<text
+x="528"
+y="318"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+fill="#8b949e">
+04
+</text>
+
+<text
+x="555"
+y="318"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#f0f6fc">
+Action-TWRP-Bu...
+</text>
+
+<text
+x="710"
+y="318"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+text-anchor="end"
+fill="#58a6ff">
 5
+</text>
+
+<text
+x="528"
+y="364"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+fill="#8b949e">
+05
+</text>
+
+<text
+x="555"
+y="364"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+font-weight="700"
+fill="#f0f6fc">
+Action-Build
+</text>
+
+<text
+x="710"
+y="364"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="10"
+text-anchor="end"
+fill="#58a6ff">
+2
 </text>
 
 <line
@@ -491,12 +579,31 @@ font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="9"
 text-anchor="end"
 fill="#f0f6fc">
-2
+5
 </text>
 
 <text
 x="528"
 y="515"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="9"
+fill="#8b949e">
+ACTIVE
+</text>
+
+<text
+x="710"
+y="515"
+font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
+font-size="9"
+text-anchor="end"
+fill="#f0f6fc">
+5
+</text>
+
+<text
+x="528"
+y="545"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="9"
 fill="#8b949e">
@@ -505,17 +612,17 @@ COMMITS INDEXED
 
 <text
 x="710"
-y="515"
+y="545"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="9"
 text-anchor="end"
 fill="#f0f6fc">
-15
+116
 </text>
 
 <text
 x="528"
-y="545"
+y="575"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="9"
 fill="#8b949e">
@@ -524,12 +631,12 @@ UPDATED
 
 <text
 x="710"
-y="545"
+y="575"
 font-family="JetBrains Mono, DejaVu Sans Mono, monospace"
 font-size="9"
 text-anchor="end"
 fill="#f0f6fc">
-2026-09-06 07:26 UTC
+2026-09-06 07:30 UTC
 </text>
 
 <text
